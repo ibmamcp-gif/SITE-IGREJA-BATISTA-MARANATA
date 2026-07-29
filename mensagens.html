@@ -133,13 +133,13 @@ body{padding-top:76px!important}
 </style></head>
 <body class="bg-background text-on-surface">
 <!-- TopNavBar -->
-<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link active" href="mensagens.html">Mensagens</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="parceiros.html">Parceiros</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="pedido-oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="mensagens.html">Mensagens</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="parceiros.html">Parceiros</a><a href="contato.html">Contato</a><a href="pedido-oracao.html">Pedido de Oração</a></div>
 <main class="pt-24">
 <!-- Hero Section -->
 <section class="max-w-[1200px] mx-auto px-gutter py-section-gap-desktop">
 <div class="max-w-2xl">
 <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full font-label-sm text-label-sm mb-4">Ensino e Edificação</span>
-<h1 class="font-display-lg text-display-lg text-primary mb-6">Palavra e Verdade</h1>
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Mensagens</h1>
 <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
                     Explore nossa biblioteca de mensagens bíblicas. Um repositório de sabedoria cristocêntrica projetado para nutrir sua fé e aprofundar seu conhecimento das Escrituras.
                 </p>
@@ -164,9 +164,7 @@ body{padding-top:76px!important}
 <div class="relative">
 <select class="w-full appearance-none px-4 py-4 bg-surface-container-low border-none rounded-xl text-label-sm font-label-sm focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer">
 <option>Pregador</option>
-<option>Pr. João Silva</option>
-<option>Pr. Marcos Oliveira</option>
-<option>Dra. Elena Santos</option>
+<option disabled>Em breve</option>
 </select>
 <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-sm">expand_more</span>
 </div>
@@ -186,212 +184,50 @@ body{padding-top:76px!important}
 </section>
 <!-- Sermons Grid -->
 <section class="max-w-[1200px] mx-auto px-gutter pb-section-gap-desktop">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
-<!-- Sermon Card 1 -->
+<!-- Estado vazio: nenhuma mensagem cadastrada ainda -->
+<div class="flex flex-col items-center justify-center text-center py-20 px-6 bg-surface-container-lowest rounded-2xl border border-dashed border-outline-variant/40">
+<span class="material-symbols-outlined text-primary/40 text-[64px] mb-6">movie</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-3">Em breve, novas mensagens</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-2">
+                    Ainda não há mensagens cadastradas nesta biblioteca. Assim que os sermões forem publicados, eles aparecerão aqui organizados por tema, pregador e livro bíblico.
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto">
+                    Acompanhe nossos cultos presenciais ou pelas redes sociais da igreja para não perder nenhuma mensagem.
+                </p>
+</div>
+<!-- Modelo de card (referência de estrutura para quando houver conteúdo real) -->
+<div class="hidden" aria-hidden="true">
 <article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
 <div class="relative aspect-video overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic, high-quality photograph of a wooden pulpit in a modern, sunlit church sanctuary with large glass windows. The lighting is soft and natural, emphasizing a peaceful atmosphere. The aesthetic is minimalist with a palette of deep navy blues and warm wood tones, suggesting a professional and sacred environment." style="background-image: url('assets/images/foto17.jpeg')"></div>
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('assets/images/foto17.jpeg')"></div>
 <div class="absolute top-4 left-4">
-<span class="bg-primary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Série: Identidade</span>
+<span class="bg-primary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Tema</span>
 </div>
 </div>
 <div class="p-6 flex flex-col flex-grow">
 <div class="flex justify-between items-start mb-4">
 <div>
-<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">O Caminho da Redenção</h3>
+<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">Título da mensagem</h3>
 <p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">person</span> Pr. João Silva
+<span class="material-symbols-outlined text-[18px]">person</span> Nome do pregador
+                                </p>
+<p class="font-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">event</span> Data
+                                </p>
+<p class="font-body-md text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">menu_book</span> Texto bíblico
                                 </p>
 </div>
 </div>
-<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">
-                            Uma análise profunda sobre o sacrifício de Cristo e como ele redefine nossa trajetória pessoal e espiritual no mundo contemporâneo.
-                        </p>
+<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">Resumo da mensagem.</p>
 <div class="mt-auto flex items-center justify-between border-t border-outline-variant/20 pt-4">
 <div class="flex gap-3 text-outline">
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Vídeo disponível">play_circle</span>
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Áudio disponível">headphones</span>
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="PDF disponível">description</span>
+<span class="material-symbols-outlined text-[20px]" title="Vídeo disponível">play_circle</span>
 </div>
-<button class="text-primary font-button text-button flex items-center gap-1 group/btn">
-                                Assistir agora
-                                <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">chevron_right</span>
-</button>
+<button class="text-primary font-button text-button flex items-center gap-1 group/btn">Assistir agora</button>
 </div>
 </div>
 </article>
-<!-- Sermon Card 2 -->
-<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
-<div class="relative aspect-video overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="An artistic top-down view of an open Bible on a textured linen surface, with a pair of reading glasses resting on the pages. The scene is illuminated by warm, golden hour light, creating long, soft shadows. The overall mood is contemplative and intellectual, with a clean and airy composition in shades of cream, tan, and soft blues." style="background-image: url('assets/images/foto17.jpeg')"></div>
-<div class="absolute top-4 left-4">
-<span class="bg-secondary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Teologia</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">Fundamentos da Fé</h3>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">person</span> Dra. Elena Santos
-                                </p>
-</div>
-</div>
-<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">
-                            Explorando os pilares doutrinários que sustentam a igreja e como a teologia prática molda nossas decisões diárias e relacionamentos.
-                        </p>
-<div class="mt-auto flex items-center justify-between border-t border-outline-variant/20 pt-4">
-<div class="flex gap-3 text-outline">
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Vídeo disponível">play_circle</span>
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Áudio disponível">headphones</span>
-</div>
-<button class="text-primary font-button text-button flex items-center gap-1 group/btn">
-                                Assistir agora
-                                <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">chevron_right</span>
-</button>
-</div>
-</div>
-</article>
-<!-- Sermon Card 3 -->
-<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
-<div class="relative aspect-video overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist architectural photograph of a modern chapel interior, featuring vertical wooden slats and a simple cross illuminated by a single beam of light. The composition is highly balanced and symmetrical, using a professional light-mode aesthetic with expansive white space and subtle grey gradients. The atmosphere is one of peaceful authority and sacred minimalism." style="background-image: url('assets/images/foto17.jpeg')"></div>
-<div class="absolute top-4 left-4">
-<span class="bg-primary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Série: Salmos</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">O Descanso na Tempestade</h3>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">person</span> Pr. Marcos Oliveira
-                                </p>
-</div>
-</div>
-<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">
-                            Um estudo reconfortante sobre o Salmo 23 e a providência divina em tempos de incerteza e desafios emocionais profundos.
-                        </p>
-<div class="mt-auto flex items-center justify-between border-t border-outline-variant/20 pt-4">
-<div class="flex gap-3 text-outline">
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Áudio disponível">headphones</span>
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="PDF disponível">description</span>
-</div>
-<button class="text-primary font-button text-button flex items-center gap-1 group/btn">
-                                Ouvir agora
-                                <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">chevron_right</span>
-</button>
-</div>
-</div>
-</article>
-<!-- Sermon Card 4 -->
-<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
-<div class="relative aspect-video overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A beautiful wide-angle shot of a serene mountain landscape at dawn, with misty valleys and soft purple and blue hues in the sky. The image has a clean, high-end travel photography style, evoking a sense of vastness and divine creation. The lighting is ethereal and soft, aligning with a premium digital design aesthetic." style="background-image: url('assets/images/foto17.jpeg')"></div>
-<div class="absolute top-4 left-4">
-<span class="bg-secondary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Criação</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">Eco da Eternidade</h3>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">person</span> Pr. João Silva
-                                </p>
-</div>
-</div>
-<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">
-                            Como a natureza e a ciência apontam para a glória de Deus e nosso papel como mordomos da criação divina.
-                        </p>
-<div class="mt-auto flex items-center justify-between border-t border-outline-variant/20 pt-4">
-<div class="flex gap-3 text-outline">
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Vídeo disponível">play_circle</span>
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="PDF disponível">description</span>
-</div>
-<button class="text-primary font-button text-button flex items-center gap-1 group/btn">
-                                Assistir agora
-                                <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">chevron_right</span>
-</button>
-</div>
-</div>
-</article>
-<!-- Sermon Card 5 -->
-<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
-<div class="relative aspect-video overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of human hands gently holding a small seedling in soil, with a soft-focus background of a sunlit garden. The lighting is warm and nurturing. The style is clean, modern, and high-resolution, symbolizing growth, care, and the nurturing of faith. The color palette features natural greens and warm earth tones." style="background-image: url('assets/images/foto17.jpeg')"></div>
-<div class="absolute top-4 left-4">
-<span class="bg-primary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Série: Crescimento</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">O Cultivo do Caráter</h3>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">person</span> Dra. Elena Santos
-                                </p>
-</div>
-</div>
-<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">
-                            Uma jornada prática pelas virtudes cristãs e como o Espírito Santo trabalha na transformação do nosso interior para a glória de Deus.
-                        </p>
-<div class="mt-auto flex items-center justify-between border-t border-outline-variant/20 pt-4">
-<div class="flex gap-3 text-outline">
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Vídeo disponível">play_circle</span>
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Áudio disponível">headphones</span>
-</div>
-<button class="text-primary font-button text-button flex items-center gap-1 group/btn">
-                                Assistir agora
-                                <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">chevron_right</span>
-</button>
-</div>
-</div>
-</article>
-<!-- Sermon Card 6 -->
-<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
-<div class="relative aspect-video overflow-hidden">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist desk setup with a journal, a pen, and a cup of coffee, looking out through a large window onto a rainy city street at night. The city lights are blurred into soft bokeh. The aesthetic is sophisticated, cozy, and reflective, with a focus on interior calm amidst external chaos. The palette is dominated by cool blues and warm amber highlights." style="background-image: url('assets/images/foto17.jpeg')"></div>
-<div class="absolute top-4 left-4">
-<span class="bg-secondary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Vida Prática</span>
-</div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">Paz em Meio ao Caos</h3>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">person</span> Pr. Marcos Oliveira
-                                </p>
-</div>
-</div>
-<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">
-                            Estratégias bíblicas para gerenciar a ansiedade e manter o foco nas promessas de Deus em um mundo hiperconectado e barulhento.
-                        </p>
-<div class="mt-auto flex items-center justify-between border-t border-outline-variant/20 pt-4">
-<div class="flex gap-3 text-outline">
-<span class="material-symbols-outlined text-[20px] hover:text-primary transition-colors cursor-help" title="Áudio disponível">headphones</span>
-</div>
-<button class="text-primary font-button text-button flex items-center gap-1 group/btn">
-                                Ouvir agora
-                                <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">chevron_right</span>
-</button>
-</div>
-</div>
-</article>
-</div>
-<!-- Pagination -->
-<div class="mt-16 flex justify-center items-center gap-2">
-<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant/30 text-primary hover:bg-primary-container hover:text-on-primary-container transition-all">
-<span class="material-symbols-outlined text-[20px]">chevron_left</span>
-</button>
-<button class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-on-primary font-bold">1</button>
-<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-all">2</button>
-<button class="w-10 h-10 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-all">3</button>
-<span class="mx-2 text-outline">...</span>
-<button class="w-10 h-10 flex items-center justify-center rounded-full border border-outline-variant/30 text-primary hover:bg-primary-container hover:text-on-primary-container transition-all">
-<span class="material-symbols-outlined text-[20px]">chevron_right</span>
-</button>
 </div>
 </section>
 <!-- Newsletter / CTA -->
