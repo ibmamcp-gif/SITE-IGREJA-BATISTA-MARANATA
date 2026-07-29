@@ -149,32 +149,24 @@ body{padding-top:76px!important}
 <div class="flex flex-col lg:flex-row gap-4">
 <div class="flex-1 relative">
 <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
-<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 text-body-md font-body-md placeholder-outline transition-all" placeholder="Buscar por título, palavra-chave ou passagem..." type="text"/>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary/20 text-body-md font-body-md placeholder-outline transition-all" id="msg-search" placeholder="Buscar por título, palavra-chave ou passagem..." type="text"/>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
 <div class="relative">
-<select class="w-full appearance-none px-4 py-4 bg-surface-container-low border-none rounded-xl text-label-sm font-label-sm focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer">
-<option>Tema</option>
-<option>Vida Cristã</option>
-<option>Teologia</option>
-<option>Família</option>
+<select class="w-full appearance-none px-4 py-4 bg-surface-container-low border-none rounded-xl text-label-sm font-label-sm focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="msg-filter-tema">
+<option value="">Tema</option>
 </select>
 <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-sm">expand_more</span>
 </div>
 <div class="relative">
-<select class="w-full appearance-none px-4 py-4 bg-surface-container-low border-none rounded-xl text-label-sm font-label-sm focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer">
-<option>Pregador</option>
-<option disabled>Em breve</option>
+<select class="w-full appearance-none px-4 py-4 bg-surface-container-low border-none rounded-xl text-label-sm font-label-sm focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="msg-filter-pregador">
+<option value="">Pregador</option>
 </select>
 <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-sm">expand_more</span>
 </div>
 <div class="relative">
-<select class="w-full appearance-none px-4 py-4 bg-surface-container-low border-none rounded-xl text-label-sm font-label-sm focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer">
-<option>Livro da Bíblia</option>
-<option>Gênesis</option>
-<option>Salmos</option>
-<option>João</option>
-<option>Romanos</option>
+<select class="w-full appearance-none px-4 py-4 bg-surface-container-low border-none rounded-xl text-label-sm font-label-sm focus:ring-2 focus:ring-primary/20 transition-all cursor-pointer" id="msg-filter-livro">
+<option value="">Livro da Bíblia</option>
 </select>
 <span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-outline text-sm">expand_more</span>
 </div>
@@ -185,7 +177,7 @@ body{padding-top:76px!important}
 <!-- Sermons Grid -->
 <section class="max-w-[1200px] mx-auto px-gutter pb-section-gap-desktop">
 <!-- Estado vazio: nenhuma mensagem cadastrada ainda -->
-<div class="flex flex-col items-center justify-center text-center py-20 px-6 bg-surface-container-lowest rounded-2xl border border-dashed border-outline-variant/40">
+<div class="hidden flex-col items-center justify-center text-center py-20 px-6 bg-surface-container-lowest rounded-2xl border border-dashed border-outline-variant/40" id="msg-empty-state">
 <span class="material-symbols-outlined text-primary/40 text-[64px] mb-6">movie</span>
 <h2 class="font-headline-md text-headline-md text-primary mb-3">Em breve, novas mensagens</h2>
 <p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto mb-2">
@@ -195,41 +187,135 @@ body{padding-top:76px!important}
                     Acompanhe nossos cultos presenciais ou pelas redes sociais da igreja para não perder nenhuma mensagem.
                 </p>
 </div>
-<!-- Modelo de card (referência de estrutura para quando houver conteúdo real) -->
-<div class="hidden" aria-hidden="true">
-<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
-<div class="relative aspect-video overflow-hidden">
-<div class="w-full h-full bg-cover bg-center" style="background-image: url('assets/images/foto17.jpeg')"></div>
-<div class="absolute top-4 left-4">
-<span class="bg-primary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">Tema</span>
+<!-- Estado: nenhum resultado para o filtro/busca atual -->
+<div class="hidden flex-col items-center justify-center text-center py-20 px-6 bg-surface-container-lowest rounded-2xl border border-dashed border-outline-variant/40" id="msg-no-results-state">
+<span class="material-symbols-outlined text-primary/40 text-[64px] mb-6">search_off</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-3">Nenhuma mensagem encontrada</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mx-auto">Tente ajustar a busca ou os filtros selecionados.</p>
 </div>
-</div>
-<div class="p-6 flex flex-col flex-grow">
-<div class="flex justify-between items-start mb-4">
-<div>
-<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">Título da mensagem</h3>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">person</span> Nome do pregador
-                                </p>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">event</span> Data
-                                </p>
-<p class="font-body-md text-on-surface-variant flex items-center gap-1">
-<span class="material-symbols-outlined text-[18px]">menu_book</span> Texto bíblico
-                                </p>
-</div>
-</div>
-<p class="font-body-md text-on-surface-variant mb-6 line-clamp-3 text-sm leading-relaxed">Resumo da mensagem.</p>
-<div class="mt-auto flex items-center justify-between border-t border-outline-variant/20 pt-4">
-<div class="flex gap-3 text-outline">
-<span class="material-symbols-outlined text-[20px]" title="Vídeo disponível">play_circle</span>
-</div>
-<button class="text-primary font-button text-button flex items-center gap-1 group/btn">Assistir agora</button>
-</div>
-</div>
-</article>
-</div>
+<!-- Cards são inseridos aqui via JavaScript, a partir de assets/data/mensagens.json -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg" id="msg-grid"></div>
 </section>
+<script>
+(function () {
+    const DATA_URL = 'assets/data/mensagens.json';
+    const grid = document.getElementById('msg-grid');
+    const emptyState = document.getElementById('msg-empty-state');
+    const noResultsState = document.getElementById('msg-no-results-state');
+    const searchInput = document.getElementById('msg-search');
+    const temaSelect = document.getElementById('msg-filter-tema');
+    const pregadorSelect = document.getElementById('msg-filter-pregador');
+    const livroSelect = document.getElementById('msg-filter-livro');
+
+    let allMessages = [];
+
+    function populateSelect(select, values) {
+        const unique = [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+        for (const v of unique) {
+            const opt = document.createElement('option');
+            opt.value = v;
+            opt.textContent = v;
+            select.appendChild(opt);
+        }
+    }
+
+    function formatDate(iso) {
+        if (!iso) return '';
+        const parts = iso.split('-');
+        if (parts.length !== 3) return iso;
+        return `${parts[2]}/${parts[1]}/${parts[0]}`;
+    }
+
+    function youtubeThumb(id) {
+        return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    }
+
+    function cardHTML(msg) {
+        const watchUrl = `https://www.youtube.com/watch?v=${msg.youtube_id}`;
+        return `
+<article class="bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden card-hover group flex flex-col h-full">
+<a class="relative aspect-video overflow-hidden block" href="${watchUrl}" rel="noopener" target="_blank">
+<img alt="Miniatura: ${msg.titulo}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" src="${youtubeThumb(msg.youtube_id)}"/>
+<span class="absolute inset-0 flex items-center justify-center bg-primary/20 group-hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined text-white text-5xl drop-shadow-lg" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</span>
+${msg.tema ? `<span class="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-on-primary px-3 py-1 rounded-full text-[12px] font-bold tracking-wider uppercase">${msg.tema}</span>` : ''}
+</a>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-[20px] text-primary mb-1 leading-tight">${msg.titulo}</h3>
+${msg.pregador ? `<p class="font-body-md text-on-surface-variant flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-[18px]">person</span> ${msg.pregador}</p>` : ''}
+${msg.data ? `<p class="font-body-md text-on-surface-variant flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-[18px]">event</span> ${formatDate(msg.data)}</p>` : ''}
+${msg.livro ? `<p class="font-body-md text-on-surface-variant flex items-center gap-1 text-sm"><span class="material-symbols-outlined text-[18px]">menu_book</span> ${msg.livro}</p>` : ''}
+${msg.descricao ? `<p class="font-body-md text-on-surface-variant mt-3 mb-2 line-clamp-3 text-sm leading-relaxed">${msg.descricao}</p>` : ''}
+<div class="mt-auto pt-4 border-t border-outline-variant/20">
+<a class="text-primary font-button text-button flex items-center gap-1" href="${watchUrl}" rel="noopener" target="_blank">
+                        Assistir no YouTube
+                        <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</a>
+</div>
+</div>
+</article>`;
+    }
+
+    function render() {
+        if (allMessages.length === 0) {
+            emptyState.classList.remove('hidden');
+            emptyState.classList.add('flex');
+            grid.innerHTML = '';
+            return;
+        }
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+
+        const q = (searchInput.value || '').toLowerCase().trim();
+        const tema = temaSelect.value;
+        const pregador = pregadorSelect.value;
+        const livro = livroSelect.value;
+
+        const filtered = allMessages.filter((m) => {
+            if (tema && m.tema !== tema) return false;
+            if (pregador && m.pregador !== pregador) return false;
+            if (livro && m.livro !== livro) return false;
+            if (q) {
+                const haystack = [m.titulo, m.descricao, m.livro, m.pregador].filter(Boolean).join(' ').toLowerCase();
+                if (!haystack.includes(q)) return false;
+            }
+            return true;
+        });
+
+        if (filtered.length === 0) {
+            noResultsState.classList.remove('hidden');
+            noResultsState.classList.add('flex');
+            grid.innerHTML = '';
+            return;
+        }
+        noResultsState.classList.add('hidden');
+        noResultsState.classList.remove('flex');
+
+        grid.innerHTML = filtered.map(cardHTML).join('');
+    }
+
+    fetch(DATA_URL)
+        .then((r) => r.ok ? r.json() : [])
+        .then((data) => {
+            allMessages = Array.isArray(data) ? data : [];
+            allMessages.sort((a, b) => (b.data || '').localeCompare(a.data || ''));
+            populateSelect(temaSelect, allMessages.map((m) => m.tema));
+            populateSelect(pregadorSelect, allMessages.map((m) => m.pregador));
+            populateSelect(livroSelect, allMessages.map((m) => m.livro));
+            render();
+        })
+        .catch(() => {
+            allMessages = [];
+            render();
+        });
+
+    searchInput.addEventListener('input', render);
+    temaSelect.addEventListener('change', render);
+    pregadorSelect.addEventListener('change', render);
+    livroSelect.addEventListener('change', render);
+})();
+</script>
 <!-- Newsletter / CTA -->
 <section class="bg-primary py-section-gap-desktop overflow-hidden relative">
 <div class="absolute inset-0 opacity-10 pointer-events-none">
