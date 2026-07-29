@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mulher em Missão - Ministério Feminino</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#f9f9fe",
+                    "outline": "#737781",
+                    "on-background": "#1a1c1f",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f9f9fe",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#002551",
+                    "on-surface-variant": "#434750",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "primary-container": "#0d3b73",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#261900",
+                    "secondary-fixed": "#ffdea5",
+                    "surface-tint": "#395e98",
+                    "on-secondary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#321300",
+                    "outline-variant": "#c3c6d1",
+                    "inverse-primary": "#aac7ff",
+                    "on-primary-container": "#83a7e6",
+                    "tertiary-fixed": "#ffdbc8",
+                    "tertiary": "#421b00",
+                    "surface-container-high": "#e8e7ed",
+                    "on-tertiary-container": "#e4935f",
+                    "secondary-container": "#fed488",
+                    "inverse-surface": "#2f3035",
+                    "surface-dim": "#dad9df",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eeedf3",
+                    "surface-container-low": "#f4f3f8",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#713709",
+                    "tertiary-container": "#632c00",
+                    "surface-variant": "#e2e2e7",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#aac7ff",
+                    "tertiary-fixed-dim": "#ffb68a",
+                    "secondary-fixed-dim": "#e9c176",
+                    "inverse-on-surface": "#f1f0f6",
+                    "surface-container-highest": "#e2e2e7",
+                    "surface-bright": "#f9f9fe",
+                    "on-secondary-container": "#785a1a",
+                    "secondary": "#775a19",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface": "#1a1c1f",
+                    "on-primary-fixed": "#001b3e",
+                    "on-primary-fixed-variant": "#1e467f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "gutter": "24px",
+                    "section-gap-desktop": "120px",
+                    "container-max-width": "1200px",
+                    "stack-lg": "24px",
+                    "section-gap-mobile": "64px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "button": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "button": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #ffffff;
+            color: #1a1c1f;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .section-padding {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding-top: 64px;
+                padding-bottom: 64px;
+            }
+        }
+        .card-shadow {
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.04);
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+<meta content="Site oficial da Igreja Batista Maranata de Macapá — Tudo para a Glória de Deus." name="description"/><link href="assets/images/Maranata.png" rel="icon"/>
+<style id="maranata-global-standard">
+:root{--maranata-blue:#002551;--maranata-blue-2:#0d3b73;--maranata-gold:#c99122}
+body{padding-top:76px!important}
+.maranata-header{position:fixed;inset:0 0 auto 0;z-index:9999;height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,37,81,.10);box-shadow:0 5px 22px rgba(0,37,81,.07)}
+.maranata-nav{height:100%;max-width:1200px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:24px}
+.maranata-brand{display:flex;align-items:center;gap:10px;min-width:215px;text-decoration:none;color:var(--maranata-blue)}
+.maranata-brand img{width:42px;height:42px;object-fit:contain;display:block}
+.maranata-brand span{font:700 14px/1.15 Inter,Arial,sans-serif;letter-spacing:-.01em}
+.maranata-links{margin-left:auto;display:flex;align-items:center;gap:23px}
+.maranata-link{position:relative;color:#333943;text-decoration:none;font:600 13px/1 Inter,Arial,sans-serif;white-space:nowrap;padding:30px 0 28px}
+.maranata-link:hover,.maranata-link.active{color:var(--maranata-blue)}
+.maranata-link.active:after{content:"";position:absolute;left:0;right:0;bottom:19px;height:2px;border-radius:2px;background:var(--maranata-blue)}
+.maranata-prayer{margin-left:8px;background:var(--maranata-blue);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 18px;font:700 13px/1.15 Inter,Arial,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 8px 20px rgba(0,37,81,.16)}
+.maranata-mobile-button{display:none;margin-left:auto;border:0;background:transparent;color:var(--maranata-blue);font-size:28px;cursor:pointer}
+.maranata-mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:9998;background:#fff;padding:14px 24px 24px;border-bottom:1px solid #e5e7eb;box-shadow:0 14px 30px rgba(0,37,81,.12)}
+.maranata-mobile-menu.open{display:grid;gap:4px}
+.maranata-mobile-menu a{padding:12px 4px;color:#26303d;text-decoration:none;font:600 15px Inter,Arial,sans-serif;border-bottom:1px solid #eef0f3}
+.hero-logo-clear{width:190px!important;height:190px!important;object-fit:contain!important;filter:drop-shadow(0 10px 24px rgba(0,0,0,.22))}
+@media(max-width:1050px){.maranata-links,.maranata-prayer{display:none}.maranata-mobile-button{display:block}.maranata-brand{min-width:0}.maranata-brand span{display:block}}
+@media(max-width:520px){body{padding-top:68px!important}.maranata-header{height:68px}.maranata-mobile-menu{top:68px}.maranata-nav{padding:0 16px}.maranata-brand img{width:38px;height:38px}.maranata-brand span{font-size:12px}.hero-logo-clear{width:150px!important;height:150px!important}}
+</style></head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link active" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<!-- Hero Section -->
+<header class="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center scale-105 transform" data-alt="A cinematic, wide-angle shot of a diverse group of women standing together in a bright, modern church hall. Soft sunlight streams through high windows, creating a warm, ethereal glow. The women are dressed in elegant, modest clothing with a sophisticated color palette of whites, deep blues, and subtle gold accents. The atmosphere is peaceful, dignified, and filled with a sense of purpose and fellowship. The visual style is premium and high-end, resembling a high-fashion editorial." style="background-image: url('assets/images/foto7.jpeg')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max-width mx-auto px-gutter">
+<div class="max-w-2xl text-white">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary-fixed/20 border border-secondary-fixed/30 text-secondary-fixed font-label-sm text-label-sm mb-6 uppercase tracking-widest">Igreja Batista Maranata</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg mb-6 leading-tight">Mulheres vivendo para a glória de Deus.</h1>
+<p class="font-body-lg text-body-lg mb-10 opacity-90">Um ministério dedicado a fortalecer a fé, promover o discipulado e edificar mulheres com o propósito de servir ao Reino com excelência e amor.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-full font-button text-button hover:bg-surface transition-all shadow-lg">Conheça nossa Missão</button>
+<button class="border border-white/40 hover:bg-white/10 text-white px-8 py-4 rounded-full font-button text-button transition-all">Ver Agenda</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Our Mission -->
+<section class="section-padding bg-surface-container-lowest">
+<div class="max-w-container-max-width mx-auto px-gutter text-center">
+<div class="reveal-on-scroll">
+<span class="text-secondary font-label-sm text-label-sm tracking-widest uppercase mb-4 block">Propósito Eterno</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Nossa Missão</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto leading-relaxed">
+                    Existimos para glorificar a Deus através da união feminina, buscando a maturidade espiritual e o serviço comunitário. Acreditamos que cada mulher possui um chamado único e precioso, desenhado pelo Criador para impactar sua família, igreja e sociedade.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 mt-20">
+<div class="reveal-on-scroll transition-delay-100 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl">auto_stories</span>
+</div>
+<h3 class="font-headline-md text-body-lg font-bold text-primary mb-3">Enraizamento na Palavra</h3>
+<p class="text-on-surface-variant text-body-md">Estudo bíblico profundo e devocionais que sustentam a jornada diária com Cristo.</p>
+</div>
+<div class="reveal-on-scroll transition-delay-200 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl">groups</span>
+</div>
+<h3 class="font-headline-md text-body-lg font-bold text-primary mb-3">Comunhão Genuína</h3>
+<p class="text-on-surface-variant text-body-md">Espaço seguro para compartilhar, crescer e apoiar umas às outras em amor fraternal.</p>
+</div>
+<div class="reveal-on-scroll transition-delay-300 flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mb-6 border border-primary/10">
+<span class="material-symbols-outlined text-primary text-3xl">volunteer_activism</span>
+</div>
+<h3 class="font-headline-md text-body-lg font-bold text-primary mb-3">Serviço com Propósito</h3>
+<p class="text-on-surface-variant text-body-md">Mãos estendidas para servir ao próximo e cumprir o Ide de Jesus Cristo.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pillars (Modern Cards) -->
+<section class="section-padding bg-surface">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Nossos Pilares</h2>
+<p class="text-on-surface-variant text-body-lg">A estrutura que sustenta nossas atividades e direciona nosso crescimento como ministério.</p>
+</div>
+<div class="hidden md:block">
+<div class="h-[1px] w-32 bg-outline-variant"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Discipleship -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden card-shadow card-hover transition-all duration-500 reveal-on-scroll">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A close-up shot of two women sitting across a wooden table in a serene, modern coffee shop. One woman is mentoring the younger one, sharing a Bible and laughing gently. The lighting is soft and natural, emphasizing the warmth and trust of their relationship. The overall aesthetic is premium, clean, and minimalist, with focus on human connection and a spiritual atmosphere." decoding="async" loading="lazy" src="assets/images/foto7.jpeg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Discipulado</span>
+</div>
+</div>
+<div class="p-8 border-b-4 border-secondary/20 group-hover:border-secondary transition-colors duration-500">
+<h4 class="font-headline-md text-body-lg font-bold text-primary mb-4">Caminhada Juntas</h4>
+<p class="text-on-surface-variant text-body-md mb-6 leading-relaxed">Promovemos mentoria entre gerações, onde a experiência e o vigor se encontram para a glória de Deus.</p>
+<a class="text-primary font-button text-button flex items-center gap-2 group/link" href="#">
+                            Saber mais <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Fellowship -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden card-shadow card-hover transition-all duration-500 reveal-on-scroll transition-delay-100">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A beautiful, high-end photograph of a group of diverse women gathered around a large, beautifully set dining table decorated with flowers and candles. They are engaged in heartfelt conversation and fellowship. The lighting is warm and inviting, highlighting the elegant table setting and the joyful expressions of the women. The style is sophisticated, serene, and clean, reminiscent of a premium lifestyle magazine." decoding="async" loading="lazy" src="assets/images/foto10.png"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Comunhão</span>
+</div>
+</div>
+<div class="p-8 border-b-4 border-secondary/20 group-hover:border-secondary transition-colors duration-500">
+<h4 class="font-headline-md text-body-lg font-bold text-primary mb-4">Laços de Fé</h4>
+<p class="text-on-surface-variant text-body-md mb-6 leading-relaxed">Momentos de lazer, oração e compartilhamento que fortalecem a unidade do corpo de Cristo.</p>
+<a class="text-primary font-button text-button flex items-center gap-2 group/link" href="#">
+                            Saber mais <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Biblical Studies -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden card-shadow card-hover transition-all duration-500 reveal-on-scroll transition-delay-200">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An overhead flat-lay shot of a minimalist desk with an open Bible, a high-quality journal, a gold fountain pen, and a small sprig of dried flowers. The color palette is composed of soft whites, deep blues, and subtle gold accents. The lighting is soft and airy, creating a meditative and scholarly atmosphere. The design is high-end, clean, and reflects the intellectual and spiritual pursuit of Biblical knowledge." decoding="async" loading="lazy" src="assets/images/foto13.png"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Estudos</span>
+</div>
+</div>
+<div class="p-8 border-b-4 border-secondary/20 group-hover:border-secondary transition-colors duration-500">
+<h4 class="font-headline-md text-body-lg font-bold text-primary mb-4">Verdade que Liberta</h4>
+<p class="text-on-surface-variant text-body-md mb-6 leading-relaxed">Cursos e grupos de estudo sistemático da Bíblia aplicados aos desafios da mulher contemporânea.</p>
+<a class="text-primary font-button text-button flex items-center gap-2 group/link" href="#">
+                            Saber mais <span class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Events & Agenda -->
+<section class="section-padding bg-surface-container-lowest overflow-hidden">
+<div class="max-w-container-max-width mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="reveal-on-scroll">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Próximos Encontros</h2>
+<p class="text-on-surface-variant text-body-lg mb-10">Fique por dentro das nossas atividades e agende-se para crescer conosco. Nossos eventos são abertos a todas as mulheres que desejam conhecer a Cristo.</p>
+<div class="space-y-6">
+<!-- Event 1 -->
+<div class="flex gap-6 group cursor-pointer hover:bg-surface-container-low p-4 rounded-xl transition-all duration-300">
+<div class="flex flex-col items-center justify-center min-w-[80px] h-20 bg-primary/5 rounded-lg border border-primary/10 group-hover:bg-primary transition-colors duration-300">
+<span class="font-bold text-headline-md text-primary group-hover:text-white leading-none">12</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant group-hover:text-white/80">OUT</span>
+</div>
+<div>
+<h4 class="font-button text-button text-primary mb-1 group-hover:translate-x-1 transition-transform">Chá das Amigas: Cultivando Relacionamentos</h4>
+<p class="text-body-md text-on-surface-variant">Sábado às 16:00 • Auditório Principal</p>
+</div>
+</div>
+<!-- Event 2 -->
+<div class="flex gap-6 group cursor-pointer hover:bg-surface-container-low p-4 rounded-xl transition-all duration-300">
+<div class="flex flex-col items-center justify-center min-w-[80px] h-20 bg-primary/5 rounded-lg border border-primary/10 group-hover:bg-primary transition-colors duration-300">
+<span class="font-bold text-headline-md text-primary group-hover:text-white leading-none">25</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant group-hover:text-white/80">OUT</span>
+</div>
+<div>
+<h4 class="font-button text-button text-primary mb-1 group-hover:translate-x-1 transition-transform">Simpósio: Mulher, Esposa e Mãe à Luz da Bíblia</h4>
+<p class="text-body-md text-on-surface-variant">Sexta às 19:30 • Espaço Kids</p>
+</div>
+</div>
+<!-- Event 3 -->
+<div class="flex gap-6 group cursor-pointer hover:bg-surface-container-low p-4 rounded-xl transition-all duration-300">
+<div class="flex flex-col items-center justify-center min-w-[80px] h-20 bg-primary/5 rounded-lg border border-primary/10 group-hover:bg-primary transition-colors duration-300">
+<span class="font-bold text-headline-md text-primary group-hover:text-white leading-none">08</span>
+<span class="text-xs uppercase tracking-widest text-on-surface-variant group-hover:text-white/80">NOV</span>
+</div>
+<div>
+<h4 class="font-button text-button text-primary mb-1 group-hover:translate-x-1 transition-transform">Retiro Anual: Renovação Profunda</h4>
+<p class="text-body-md text-on-surface-variant">Fim de Semana • Estância Águas Vivas</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative reveal-on-scroll transition-delay-200">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="A candid, high-end photograph of a woman standing by a large window in a minimalist church library, sunlight illuminating the pages of a notebook she is writing in. She is wearing a soft blue linen shirt. The scene is quiet, focused, and deeply spiritual. The lighting is soft and airy, emphasizing a light-mode aesthetic with pristine whites and deep blue tones. The composition is clean and modern." decoding="async" loading="lazy" src="assets/images/foto15.png"/>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-0"></div>
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-2xl -z-0"></div>
+</div>
+</div>
+</section>
+<!-- Gallery (High-end Grid) -->
+<section class="section-padding bg-surface">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="text-center mb-16 reveal-on-scroll">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Nossa Galeria</h2>
+<p class="text-on-surface-variant text-body-lg">Vislumbres de nossa vida em comunidade e adoração.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+<div class="space-y-4 md:space-y-8">
+<div class="aspect-square rounded-xl overflow-hidden card-shadow reveal-on-scroll">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A high-quality photo of a group of women praying together in a circle, their heads bowed and hands joined. The lighting is warm and golden, highlighting the sense of unity and spiritual intimacy. The background is a minimalist church interior with clean lines and soft white walls. The style is professional and deeply respectful." decoding="async" loading="lazy" src="assets/images/foto16.jpeg"/>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden card-shadow reveal-on-scroll">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A portrait-oriented photo showing two women in a warm embrace at a church event. They are smiling genuinely, reflecting deep sisterhood and joy. The colors are soft and muted, with a premium, timeless feel. The background is slightly blurred, focusing on the human connection. The lighting is natural and bright." decoding="async" loading="lazy" src="assets/images/foto7.jpeg"/>
+</div>
+</div>
+<div class="pt-8 space-y-4 md:space-y-8">
+<div class="aspect-[3/4] rounded-xl overflow-hidden card-shadow reveal-on-scroll transition-delay-100">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A vertical shot of a woman speaking from a minimalist, modern podium. She is gesturing gracefully, her expression serene and inspired. The setting is a bright, contemporary sanctuary with expansive white spaces and subtle architectural details. The lighting is professional and airy, reflecting a high-end ministry event." decoding="async" loading="lazy" src="assets/images/foto10.png"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden card-shadow reveal-on-scroll transition-delay-100">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A close-up shot of several women's hands holding open Bibles and notebooks during a study group. The focus is sharp on the text and the delicate gold jewelry on their hands. The atmosphere is quiet and intellectually focused. The palette is dominated by off-whites and dark blues." decoding="async" loading="lazy" src="assets/images/foto13.png"/>
+</div>
+</div>
+<div class="space-y-4 md:space-y-8">
+<div class="aspect-square rounded-xl overflow-hidden card-shadow reveal-on-scroll transition-delay-200">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A photo of a diverse group of women laughing together in a bright outdoor courtyard. They are dressed in smart-casual, elegant clothing. The background features green plants and modern architecture. The lighting is crisp morning sun, creating a vibrant and joyful atmosphere." decoding="async" loading="lazy" src="assets/images/foto15.png"/>
+</div>
+<div class="aspect-[3/4] rounded-xl overflow-hidden card-shadow reveal-on-scroll transition-delay-200">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A serene image of a woman sitting in a quiet, modern prayer room. She is looking out a window into a peaceful garden. The room is minimalist with a single candle and a Bible. The overall aesthetic is one of meditative peace and premium stillness." decoding="async" loading="lazy" src="assets/images/foto16.jpeg"/>
+</div>
+</div>
+<div class="pt-8 space-y-4 md:space-y-8">
+<div class="aspect-[3/4] rounded-xl overflow-hidden card-shadow reveal-on-scroll transition-delay-300">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A wide shot of a beautifully decorated hall for a women's conference. The tables are set with white linens, flowers, and gold accents. The space is filled with women engaged in conversation. The lighting is sophisticated and warm, creating a celebratory and premium feel." decoding="async" loading="lazy" src="assets/images/foto7.jpeg"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden card-shadow reveal-on-scroll transition-delay-300">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A candid photo of a mother and daughter attending a church service together, both looking focused and peaceful. The lighting is soft and emotional. The style is professional, avoiding clichés and focusing on authentic family moments within the ministry." decoding="async" loading="lazy" src="assets/images/foto10.png"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="section-padding bg-surface-container-lowest">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="reveal-on-scroll">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8">format_quote</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Vidas Transformadas</h2>
+<p class="text-on-surface-variant text-body-lg italic mb-10 leading-relaxed">
+                        "Encontrei no ministério Mulher em Missão não apenas um grupo, mas uma família. Aqui fui encorajada a estudar a Bíblia com profundidade e a entender meu papel como serva de Deus na minha casa e no meu trabalho."
+                    </p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary/10">
+<img class="w-full h-full object-cover" data-alt="A professional, high-end portrait of a smiling woman in her 40s. She has a peaceful and confident expression. The lighting is soft and studio-quality. The background is a neutral, light gray. The style is elegant and approachable." decoding="async" loading="lazy" src="assets/images/foto13.png"/>
+</div>
+<div>
+<p class="font-button text-button text-primary">Heloísa Santos</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest">Membro desde 2018</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="p-8 bg-surface rounded-xl border border-outline-variant/30 reveal-on-scroll transition-delay-100">
+<p class="text-body-md text-on-surface-variant mb-6 italic">"O discipulado mudou minha visão sobre o evangelho. Sou grata pela paciência e amor das mentoras."</p>
+<p class="font-bold text-primary">Carla Mendes</p>
+</div>
+<div class="p-8 bg-surface rounded-xl border border-outline-variant/30 reveal-on-scroll transition-delay-200">
+<p class="text-body-md text-on-surface-variant mb-6 italic">"A comunhão entre as mulheres é algo precioso. Sinto-me acolhida e verdadeiramente amada aqui."</p>
+<p class="font-bold text-primary">Beatriz Rocha</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="section-padding bg-primary text-on-primary text-center relative overflow-hidden">
+<!-- Abstract Decoration -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path d="M0,0 C30,40 70,20 100,60 L100,100 L0,100 Z" fill="white"></path>
+</svg>
+</div>
+<div class="max-w-container-max-width mx-auto px-gutter relative z-10">
+<div class="reveal-on-scroll">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">Faça parte desta missão.</h2>
+<p class="font-body-lg text-body-lg mb-12 max-w-2xl mx-auto opacity-80">
+                    Não importa em qual fase da vida você esteja, há um lugar especial para você em nosso ministério. Vamos crescer juntas na graça e no conhecimento do Senhor.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-secondary text-on-secondary px-10 py-5 rounded-full font-button text-button hover:bg-secondary/90 transition-all shadow-xl hover:scale-105 transform">Quero me Cadastrar</button>
+<button class="border border-white/30 hover:bg-white/10 px-10 py-5 rounded-full font-button text-button transition-all">Falar com uma Líder</button>
+</div>
+<p class="mt-12 text-sm text-white/60 tracking-wide uppercase">Próximo encontro: Sábado, às 16:00</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-on-background w-full py-stack-lg border-t border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter gap-stack-md max-w-container-max-width mx-auto">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed">Mulher em Missão</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-outline max-w-xs text-center md:text-left">
+                    Ministério Feminino da Igreja Batista Maranata. Edificando mulheres para a glória de Deus.
+                </p>
+</div>
+<div class="flex gap-8">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-80 hover:opacity-100" href="#">Privacidade</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-80 hover:opacity-100" href="#">Termos</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-80 hover:opacity-100" href="contato.html">Contato</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed underline transition-all opacity-80 hover:opacity-100" href="#">Localização</a>
+</div>
+<div class="flex flex-col items-center md:items-end gap-2">
+<div class="flex gap-4 mb-2">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-outline">© 2026 Mulher em Missão. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-on-scroll').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Header color change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-white', 'shadow-md');
+                nav.classList.remove('bg-surface/80');
+            } else {
+                nav.classList.remove('bg-white', 'shadow-md');
+                nav.classList.add('bg-surface/80');
+            }
+        });
+    </script>
+<script src="assets/site.js"></script></body></html>

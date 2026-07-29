@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Doações | Igreja Batista Maranata</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#632c00",
+                    "secondary-fixed-dim": "#e9c176",
+                    "surface-variant": "#e2e2e7",
+                    "surface-tint": "#395e98",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb68a",
+                    "on-surface-variant": "#434750",
+                    "primary-fixed-dim": "#aac7ff",
+                    "on-background": "#1a1c1f",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed": "#ffdbc8",
+                    "secondary-fixed": "#ffdea5",
+                    "primary-fixed": "#d6e3ff",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-secondary-fixed": "#261900",
+                    "on-secondary-container": "#785a1a",
+                    "surface": "#f9f9fe",
+                    "on-surface": "#1a1c1f",
+                    "background": "#f9f9fe",
+                    "surface-dim": "#dad9df",
+                    "secondary-container": "#fed488",
+                    "on-primary-fixed-variant": "#1e467f",
+                    "on-primary-fixed": "#001b3e",
+                    "primary": "#002551",
+                    "outline-variant": "#c3c6d1",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2f3035",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#e2e2e7",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#aac7ff",
+                    "surface-container-high": "#e8e7ed",
+                    "secondary": "#775a19",
+                    "on-tertiary-container": "#e4935f",
+                    "outline": "#737781",
+                    "on-tertiary-fixed-variant": "#713709",
+                    "on-primary-container": "#83a7e6",
+                    "on-primary": "#ffffff",
+                    "surface-container-low": "#f4f3f8",
+                    "surface-bright": "#f9f9fe",
+                    "primary-container": "#0d3b73",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f1f0f6",
+                    "surface-container": "#eeedf3",
+                    "tertiary": "#421b00",
+                    "on-tertiary-fixed": "#321300"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap-mobile": "64px",
+                    "section-gap-desktop": "120px",
+                    "container-max-width": "1200px",
+                    "stack-md": "16px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "stack-lg": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "button": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "button": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+      .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 30px -10px rgba(0, 37, 81, 0.15);
+      }
+      .custom-scroll::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scroll::-webkit-scrollbar-thumb {
+        background: #0d3b73;
+        border-radius: 10px;
+      }
+    </style>
+<meta content="Site oficial da Igreja Batista Maranata de Macapá — Tudo para a Glória de Deus." name="description"/><link href="assets/images/Maranata.png" rel="icon"/>
+<style id="maranata-global-standard">
+:root{--maranata-blue:#002551;--maranata-blue-2:#0d3b73;--maranata-gold:#c99122}
+body{padding-top:76px!important}
+.maranata-header{position:fixed;inset:0 0 auto 0;z-index:9999;height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,37,81,.10);box-shadow:0 5px 22px rgba(0,37,81,.07)}
+.maranata-nav{height:100%;max-width:1200px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:24px}
+.maranata-brand{display:flex;align-items:center;gap:10px;min-width:215px;text-decoration:none;color:var(--maranata-blue)}
+.maranata-brand img{width:42px;height:42px;object-fit:contain;display:block}
+.maranata-brand span{font:700 14px/1.15 Inter,Arial,sans-serif;letter-spacing:-.01em}
+.maranata-links{margin-left:auto;display:flex;align-items:center;gap:23px}
+.maranata-link{position:relative;color:#333943;text-decoration:none;font:600 13px/1 Inter,Arial,sans-serif;white-space:nowrap;padding:30px 0 28px}
+.maranata-link:hover,.maranata-link.active{color:var(--maranata-blue)}
+.maranata-link.active:after{content:"";position:absolute;left:0;right:0;bottom:19px;height:2px;border-radius:2px;background:var(--maranata-blue)}
+.maranata-prayer{margin-left:8px;background:var(--maranata-blue);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 18px;font:700 13px/1.15 Inter,Arial,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 8px 20px rgba(0,37,81,.16)}
+.maranata-mobile-button{display:none;margin-left:auto;border:0;background:transparent;color:var(--maranata-blue);font-size:28px;cursor:pointer}
+.maranata-mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:9998;background:#fff;padding:14px 24px 24px;border-bottom:1px solid #e5e7eb;box-shadow:0 14px 30px rgba(0,37,81,.12)}
+.maranata-mobile-menu.open{display:grid;gap:4px}
+.maranata-mobile-menu a{padding:12px 4px;color:#26303d;text-decoration:none;font:600 15px Inter,Arial,sans-serif;border-bottom:1px solid #eef0f3}
+.hero-logo-clear{width:190px!important;height:190px!important;object-fit:contain!important;filter:drop-shadow(0 10px 24px rgba(0,0,0,.22))}
+@media(max-width:1050px){.maranata-links,.maranata-prayer{display:none}.maranata-mobile-button{display:block}.maranata-brand{min-width:0}.maranata-brand span{display:block}}
+@media(max-width:520px){body{padding-top:68px!important}.maranata-header{height:68px}.maranata-mobile-menu{top:68px}.maranata-nav{padding:0 16px}.maranata-brand img{width:38px;height:38px}.maranata-brand span{font-size:12px}.hero-logo-clear{width:150px!important;height:150px!important}}
+</style></head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link active" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-primary/40 z-10"></div>
+<div class="w-full h-full" data-alt="A cinematic, high-quality photograph of diverse church community members laughing together during a social action project in a bright, modern setting. The lighting is soft and natural, emphasizing a sense of warmth and authentic human connection. The overall mood is hopeful and serene, reflecting the premium Apple-style minimalist aesthetic with a focus on trust and institutional integrity." style="background-image: url('assets/images/AVISO CESTA DO AMOR.png')"></div>
+</div>
+<div class="relative z-20 max-w-container-max-width mx-auto px-gutter text-center text-white">
+<h1 class="font-display-lg text-display-lg md:text-6xl mb-stack-md animate-fade-in-up">
+                    Sua generosidade transforma vidas.
+                </h1>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto opacity-90 mb-stack-lg">
+                    Cuidar do que Deus nos confiou é um ato de adoração. Cada contribuição fortalece nossa missão de espalhar amor e esperança em nossa comunidade.
+                </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a class="bg-white text-primary px-10 py-4 rounded-full font-button text-button hover:bg-surface-container-low transition-all shadow-xl" href="doacoes.html">
+                        Contribuir agora
+                    </a>
+<a class="border border-white/40 backdrop-blur-sm text-white px-10 py-4 rounded-full font-button text-button hover:bg-white/10 transition-all" href="#transparency">
+                        Ver Transparência
+                    </a>
+</div>
+</div>
+</section>
+<!-- Contribution Grid -->
+<section class="py-section-gap-desktop max-w-container-max-width mx-auto px-gutter" id="contribute">
+<div class="text-center mb-16">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-4">Áreas de Atuação</span>
+<h2 class="font-display-lg text-display-lg text-primary">Como você deseja investir?</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto mt-4">Selecione uma categoria para realizar sua doação com segurança e agilidade.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-stack-lg">
+<!-- Card Component -->
+<a class="group text-left h-full flex flex-col p-8 rounded-2xl bg-white border border-outline-variant/30 hover-lift active:scale-[0.98]" href="doacoes.html" onclick="openDonation('Dízimos')">
+<div class="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Dízimos</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">O ato de fidelidade que sustenta a estrutura básica e os serviços da nossa comunidade local.</p>
+<span class="text-primary font-button text-button flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Doar agora <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<a class="group text-left h-full flex flex-col p-8 rounded-2xl bg-white border border-outline-variant/30 hover-lift active:scale-[0.98]" href="doacoes.html" onclick="openDonation('Ofertas')">
+<div class="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Ofertas</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Contribuições voluntárias destinadas ao crescimento e manutenção das atividades da igreja.</p>
+<span class="text-primary font-button text-button flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Doar agora <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<a class="group text-left h-full flex flex-col p-8 rounded-2xl bg-white border border-outline-variant/30 hover-lift active:scale-[0.98]" href="doacoes.html" onclick="openDonation('Missões')">
+<div class="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Missões</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Apoio direto a missionários e projetos de evangelização em diversas partes do mundo.</p>
+<span class="text-primary font-button text-button flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Doar agora <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<a class="group text-left h-full flex flex-col p-8 rounded-2xl bg-white border border-outline-variant/30 hover-lift active:scale-[0.98]" href="doacoes.html" onclick="openDonation('Ação Social')">
+<div class="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Ação Social</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Projetos de assistência a famílias em vulnerabilidade e projetos comunitários locais.</p>
+<span class="text-primary font-button text-button flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Doar agora <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<a class="group text-left h-full flex flex-col p-8 rounded-2xl bg-white border border-outline-variant/30 hover-lift active:scale-[0.98]" href="doacoes.html" onclick="openDonation('Maranata Kids')">
+<div class="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">child_care</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Maranata Kids</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Investimento no futuro, proporcionando ensino e estrutura de excelência para nossas crianças.</p>
+<span class="text-primary font-button text-button flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Doar agora <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<a class="group text-left h-full flex flex-col p-8 rounded-2xl bg-white border border-outline-variant/30 hover-lift active:scale-[0.98]" href="doacoes.html" onclick="openDonation('Projetos Especiais')">
+<div class="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Projetos Especiais</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Construções, reformas e aquisições pontuais para a expansão do nosso templo e ministérios.</p>
+<span class="text-primary font-button text-button flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Doar agora <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<a class="group text-left h-full flex flex-col p-8 rounded-2xl bg-white border border-outline-variant/30 hover-lift active:scale-[0.98]" href="doacoes.html" onclick="openDonation('Parceiros Mensais')">
+<div class="w-12 h-12 rounded-xl bg-primary/5 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">handshake</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Parceiros</h3>
+<p class="text-on-surface-variant text-sm mb-6 flex-grow">Compromisso recorrente com causas específicas que exigem planejamento de longo prazo.</p>
+<span class="text-primary font-button text-button flex items-center gap-2 group-hover:gap-4 transition-all">
+                        Doar agora <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</a>
+<div class="flex flex-col p-8 rounded-2xl bg-primary text-white border border-primary overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md mb-2">Outras formas</h3>
+<p class="text-primary-fixed-dim text-sm mb-6">Entre em contato para doações de bens, legados ou parcerias institucionais.</p>
+<a class="inline-flex items-center gap-2 font-button text-button text-white hover:underline" href="mailto:contato@maranata.org">
+                            Falar conosco <span class="material-symbols-outlined text-sm">mail</span>
+</a>
+</div>
+<div class="absolute -bottom-4 -right-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">church</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Allocation Section -->
+<section class="bg-surface-container-low py-section-gap-desktop overflow-hidden">
+<div class="max-w-container-max-width mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider mb-4">Gestão de Recursos</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-stack-md">Para onde vai sua contribuição?</h2>
+<p class="text-on-surface-variant text-body-lg mb-10">
+                        Cada centavo investido na Igreja Batista Maranata é gerido com integridade e focado no propósito de servir a Deus e ao próximo.
+                    </p>
+<div class="space-y-6">
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="font-button text-button text-primary">Manutenção e Culto</span>
+<span class="font-button text-button text-secondary">40%</span>
+</div>
+<div class="w-full h-2 bg-white rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[40%] transition-all duration-1000"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="font-button text-button text-primary">Ação Social e Assistência</span>
+<span class="font-button text-button text-secondary">30%</span>
+</div>
+<div class="w-full h-2 bg-white rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[30%] transition-all duration-1000"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="font-button text-button text-primary">Missões e Evangelismo</span>
+<span class="font-button text-button text-secondary">20%</span>
+</div>
+<div class="w-full h-2 bg-white rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[20%] transition-all duration-1000"></div>
+</div>
+</div>
+<div class="group">
+<div class="flex justify-between mb-2">
+<span class="font-button text-button text-primary">Educação e Maranata Kids</span>
+<span class="font-button text-button text-secondary">10%</span>
+</div>
+<div class="w-full h-2 bg-white rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[10%] transition-all duration-1000"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-10" data-alt="A sophisticated infographic representing financial stewardship in a church context. The design uses elegant icons and gold accents over a clean white and deep blue background. The overall style is modern, professional, and trustworthy, mimicking a high-end annual report from a top-tier international organization." style="background-image: url('assets/images/AVISO CESTA DO AMOR.png')"></div>
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+<!-- Floating Stat -->
+<div class="absolute bottom-8 right-8 z-20 bg-white p-6 rounded-2xl shadow-xl border border-outline-variant/30 max-w-[200px]">
+<p class="text-xs text-on-surface-variant font-label-sm mb-1 uppercase">Vidas Impactadas</p>
+<p class="text-3xl font-bold text-primary">+15.000</p>
+<p class="text-xs text-secondary mt-1">Este ano através de sua ajuda</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Transparency Grid -->
+<section class="py-section-gap-desktop max-w-container-max-width mx-auto px-gutter" id="transparency">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-stack-lg">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-4">Transparência</span>
+<h2 class="font-display-lg text-display-lg text-primary">Nossa prestação de contas.</h2>
+<p class="text-on-surface-variant mt-4">Acreditamos que a confiança é a base de nossa comunidade. Acesse nossos relatórios e veja o impacto real das suas ofertas.</p>
+</div>
+<button class="flex items-center gap-2 text-primary font-button text-button border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors">
+                    Ver relatório anual completo <span class="material-symbols-outlined">download</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-lg">
+<div class="group cursor-pointer">
+<div class="aspect-video rounded-2xl overflow-hidden mb-6 bg-surface-container" data-alt="A crisp, high-resolution photograph of a new community center built by the church. The architecture is modern and inviting, featuring large windows and natural wood elements. The setting is sunset, casting a warm, golden glow on the building, symbolizing the bright future created by community donations. Professional architectural photography style." style="background-image: url('assets/images/AVISO CESTA DO AMOR.png')"></div>
+<h4 class="font-headline-md text-xl text-primary mb-2">Reforma do Anexo Social</h4>
+<p class="text-sm text-on-surface-variant">Concluído em Julho 2024. Atendimento a 200 famílias extras por mês.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video rounded-2xl overflow-hidden mb-6 bg-surface-container" data-alt="A heartwarming, candid photo of children in a colorful, well-equipped classroom at the Maranata Kids center. They are engaged in a creative activity, laughing and learning together. The lighting is bright and cheerful, reflecting the positive impact of church investments in the next generation. High-end lifestyle photography." style="background-image: url('assets/images/AVISO CESTA DO AMOR.png')"></div>
+<h4 class="font-headline-md text-xl text-primary mb-2">Novas Salas Kids</h4>
+<p class="text-sm text-on-surface-variant">Investimento em tecnologia e conforto para educação cristã infantil.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video rounded-2xl overflow-hidden mb-6 bg-surface-container" data-alt="An atmospheric photo showing a missionary shipment of medical supplies and food being prepared for delivery in a rural area. The scene is organized and professional, highlighting the logistical efficiency and scale of the church's global mission efforts. The mood is purposeful and professional." style="background-image: url('assets/images/AVISO CESTA DO AMOR.png')"></div>
+<h4 class="font-headline-md text-xl text-primary mb-2">Expedição Missionária Sertão</h4>
+<p class="text-sm text-on-surface-variant">Envio de 12 voluntários e 2 toneladas de alimentos e remédios.</p>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap-desktop bg-primary text-white text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="relative z-10 max-w-3xl mx-auto px-gutter">
+<div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-10">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h2 class="font-display-lg text-display-lg mb-8">
+                    Obrigado por participar daquilo que Deus está fazendo através da Igreja Batista Maranata.
+                </h2>
+<p class="text-primary-fixed-dim font-body-lg mb-10 opacity-80">
+                    Sua parceria é fundamental para que continuemos sendo luz no mundo. Que o Senhor multiplique cada semente plantada.
+                </p>
+<button class="bg-white text-primary px-12 py-4 rounded-full font-button text-button hover:bg-surface-container-low transition-all" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    Voltar ao topo
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-tertiary">
+<div class="py-section-gap-desktop px-gutter max-w-container-max-width mx-auto flex flex-col md:flex-row justify-between gap-stack-lg">
+<div class="max-w-sm">
+<div class="font-headline-md text-headline-md text-primary dark:text-tertiary-fixed font-bold mb-6">Maranata Doações</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary/70 mb-8">
+                    Levando a mensagem de Cristo com integridade, excelência e amor.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl">qr_code_2</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div>
+<h5 class="font-button text-button text-primary dark:text-tertiary-fixed mb-6">Institucional</h5>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary/70 hover:text-primary dark:hover:text-tertiary-fixed underline-offset-4 hover:underline transition-opacity" href="#">Location</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary/70 hover:text-primary dark:hover:text-tertiary-fixed underline-offset-4 hover:underline transition-opacity" href="#">Contact</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary/70 hover:text-primary dark:hover:text-tertiary-fixed underline-offset-4 hover:underline transition-opacity" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-button text-button text-primary dark:text-tertiary-fixed mb-6">Suporte</h5>
+<ul class="space-y-4">
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary/70 hover:text-primary dark:hover:text-tertiary-fixed underline-offset-4 hover:underline transition-opacity" href="#">Prayer Requests</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary/70 hover:text-primary dark:hover:text-tertiary-fixed underline-offset-4 hover:underline transition-opacity" href="#">Donations FAQ</a></li>
+<li class=""><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary/70 hover:text-primary dark:hover:text-tertiary-fixed underline-offset-4 hover:underline transition-opacity" href="#">Tax Receipts</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-gutter py-8 border-t border-outline-variant/30 flex justify-between items-center text-xs text-on-surface-variant opacity-60">
+<span class="">© 2026 Maranata Doações. All rights reserved.</span>
+<span class="">Made with Excellence</span>
+</div>
+</footer>
+<!-- Donation Modal (Simulated) -->
+<div class="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-primary/40 backdrop-blur-md hidden transition-opacity duration-300 opacity-0" id="donationModal">
+<div class="bg-white rounded-3xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col md:flex-row shadow-2xl scale-95 transition-transform duration-300">
+<!-- Modal Left: Info & Photos -->
+<div class="md:w-1/2 p-10 bg-surface-container-low overflow-y-auto custom-scroll">
+<div class="mb-10">
+<button class="flex items-center gap-2 text-on-surface-variant hover:text-primary mb-8 font-button text-button transition-colors" onclick="closeDonation()">
+<span class="material-symbols-outlined text-sm">arrow_back</span> Voltar
+                    </button>
+<h2 class="font-display-lg text-headline-md text-primary mb-4" id="modalTitle">Dízimos</h2>
+<p class="text-on-surface-variant" id="modalDesc">Sua fidelidade sustenta os ministérios e a estrutura da Igreja Batista Maranata. Através desta contribuição, garantimos o funcionamento diário e o acolhimento de novos membros.</p>
+</div>
+<div class="mb-10">
+<h3 class="font-button text-button text-primary mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">analytics</span> Transparência do Projeto
+                    </h3>
+<p class="text-sm text-on-surface-variant mb-6">Os recursos são auditados mensalmente pelo conselho fiscal e apresentados em assembleia ordinária. Atualmente, 100% das contribuições nesta categoria são alocadas conforme o orçamento aprovado.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-square rounded-xl bg-surface-variant overflow-hidden" data-alt="A clean, professional photo of a modern church accounting office or board meeting where financial reports are being reviewed with focus and integrity. The atmosphere is professional and transparent, conveying trust and stewardship. High-end corporate style photography." style="background-image: url('assets/images/AVISO CESTA DO AMOR.png')"></div>
+<div class="aspect-square rounded-xl bg-surface-variant overflow-hidden" data-alt="A detailed close-up of a premium financial report document for the church, showing clean typography and charts that demonstrate transparency and accountability. The focus is sharp on the quality of reporting." style="background-image: url('assets/images/AVISO CESTA DO AMOR.png')"></div>
+</div>
+</div>
+</div>
+<!-- Modal Right: Payment -->
+<div class="md:w-1/2 p-10 flex flex-col items-center justify-center bg-white">
+<div class="w-full text-center mb-8">
+<span class="material-symbols-outlined text-primary text-5xl mb-4">qr_code_2</span>
+<h4 class="font-headline-md text-xl text-primary">Doação via PIX</h4>
+<p class="text-sm text-on-surface-variant">Aponte a câmera ou use o Copia e Cola</p>
+</div>
+<div class="bg-surface-container p-4 rounded-2xl mb-8 relative group">
+<div class="w-48 h-48 bg-white flex items-center justify-center rounded-xl shadow-inner overflow-hidden">
+<!-- Simulated QR Code placeholder -->
+<div class="w-full h-full bg-[radial-gradient(#0d3b73_1px,transparent_1px)] bg-[size:8px_8px] opacity-20"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary/40 text-4xl">qr_code_2</span>
+</div>
+</div>
+</div>
+<div class="w-full space-y-4">
+<div class="relative">
+<input class="w-full bg-surface-container-low border-none rounded-xl py-4 pl-4 pr-12 text-xs font-mono text-on-surface-variant overflow-hidden overflow-ellipsis focus:ring-primary" readonly="" type="text" value="00020126580014br.gov.bcb.pix0136maranata-pix-key-placeholder-2024"/>
+<button class="absolute right-2 top-2 bottom-2 bg-primary text-white px-3 rounded-lg flex items-center justify-center hover:bg-primary-container transition-colors" onclick="copyPix()">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+<p class="text-center text-xs text-secondary opacity-0 transition-opacity" id="copyFeedback">Copiado com sucesso!</p>
+</div>
+<div class="mt-auto pt-10 text-center">
+<p class="text-xs text-on-surface-variant max-w-[200px]">
+                        Ao contribuir, você declara estar ciente que este é um ato voluntário de doação religiosa.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+        function openDonation(type) {
+            const modal = document.getElementById('donationModal');
+            const content = modal.querySelector('.scale-95');
+            const title = document.getElementById('modalTitle');
+            const desc = document.getElementById('modalDesc');
+
+            const info = {
+                'Dízimos': 'Sua fidelidade sustenta os ministérios e a estrutura da Igreja Batista Maranata. Através desta contribuição, garantimos o funcionamento diário e o acolhimento de novos membros.',
+                'Ofertas': 'Investimento direto no crescimento espiritual e na expansão do Reino através de projetos locais e manutenção das atividades eclesiásticas.',
+                'Missões': 'O alcance transcultural é o coração da igreja. Seu recurso financia sustento missionário, tradução bíblica e implantação de igrejas em áreas não alcançadas.',
+                'Ação Social': 'Transformação social na prática. Seu investimento viabiliza cestas básicas, cursos profissionalizantes e atendimento psicossocial para nossa vizinhança.',
+                'Maranata Kids': 'Proporcionamos um ambiente seguro, lúdico e bíblico para o desenvolvimento da fé dos nossos pequenos. Investimento em material didático e estrutura.',
+                'Projetos Especiais': 'Construindo o legado para as próximas gerações. Esta categoria é voltada para melhorias estruturais e projetos de capital da igreja.',
+                'Parceiros Mensais': 'A constância que permite o planejamento. Torne-se um mantenedor regular de projetos que exigem fluxos mensais ininterruptos.'
+            };
+
+            title.innerText = type;
+            desc.innerText = info[type] || 'Sua contribuição transforma vidas através do amor de Cristo.';
+
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.add('opacity-100');
+                content.classList.remove('scale-95');
+                content.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDonation() {
+            const modal = document.getElementById('donationModal');
+            const content = modal.querySelector('.scale-100');
+            
+            modal.classList.remove('opacity-100');
+            content.classList.remove('scale-100');
+            content.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }, 300);
+        }
+
+        function copyPix() {
+            const feedback = document.getElementById('copyFeedback');
+            feedback.classList.remove('opacity-0');
+            setTimeout(() => {
+                feedback.classList.add('opacity-0');
+            }, 2000);
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('py-1');
+            } else {
+                header.classList.remove('py-1');
+            }
+        });
+    </script>
+<script src="assets/site.js"></script></body></html>

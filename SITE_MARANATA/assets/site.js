@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const menu=document.getElementById("maranata-mobile-menu");document.querySelectorAll("#maranata-mobile-menu a").forEach(a=>a.addEventListener("click",()=>menu?.classList.remove("open")));});

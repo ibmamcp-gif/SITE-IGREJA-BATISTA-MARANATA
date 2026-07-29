@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Parceiros Maranata</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#261900",
+                    "primary-fixed-dim": "#aac7ff",
+                    "inverse-on-surface": "#f1f0f6",
+                    "tertiary-fixed-dim": "#ffb68a",
+                    "on-secondary-container": "#785a1a",
+                    "secondary-container": "#fed488",
+                    "outline": "#737781",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface": "#1a1c1f",
+                    "secondary-fixed-dim": "#e9c176",
+                    "outline-variant": "#c3c6d1",
+                    "primary-container": "#0d3b73",
+                    "surface-container": "#eeedf3",
+                    "primary": "#002551",
+                    "surface-dim": "#dad9df",
+                    "secondary": "#775a19",
+                    "on-primary-fixed": "#001b3e",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f9f9fe",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-container": "#e4935f",
+                    "surface-variant": "#e2e2e7",
+                    "inverse-primary": "#aac7ff",
+                    "surface-tint": "#395e98",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#83a7e6",
+                    "background": "#f9f9fe",
+                    "tertiary-container": "#632c00",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#321300",
+                    "tertiary-fixed": "#ffdbc8",
+                    "on-background": "#1a1c1f",
+                    "inverse-surface": "#2f3035",
+                    "tertiary": "#421b00",
+                    "on-tertiary-fixed-variant": "#713709",
+                    "surface-container-low": "#f4f3f8",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-bright": "#f9f9fe",
+                    "surface-container-high": "#e8e7ed",
+                    "on-surface-variant": "#434750",
+                    "error": "#ba1a1a",
+                    "on-primary-fixed-variant": "#1e467f",
+                    "secondary-fixed": "#ffdea5",
+                    "surface-container-highest": "#e2e2e7",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-md": "16px",
+                    "section-gap-mobile": "64px",
+                    "stack-lg": "24px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "section-gap-desktop": "120px",
+                    "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "button": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "button": ["15px", {"lineHeight": "20px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 37, 81, 0.1);
+        }
+        .nav-scrolled .nav-text {
+            color: #002551 !important;
+        }
+        .text-shadow-premium {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(234, 236, 240, 0.5);
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+<meta content="Site oficial da Igreja Batista Maranata de Macapá — Tudo para a Glória de Deus." name="description"/><link href="assets/images/Maranata.png" rel="icon"/>
+<style id="maranata-global-standard">
+:root{--maranata-blue:#002551;--maranata-blue-2:#0d3b73;--maranata-gold:#c99122}
+body{padding-top:76px!important}
+.maranata-header{position:fixed;inset:0 0 auto 0;z-index:9999;height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,37,81,.10);box-shadow:0 5px 22px rgba(0,37,81,.07)}
+.maranata-nav{height:100%;max-width:1200px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:24px}
+.maranata-brand{display:flex;align-items:center;gap:10px;min-width:215px;text-decoration:none;color:var(--maranata-blue)}
+.maranata-brand img{width:42px;height:42px;object-fit:contain;display:block}
+.maranata-brand span{font:700 14px/1.15 Inter,Arial,sans-serif;letter-spacing:-.01em}
+.maranata-links{margin-left:auto;display:flex;align-items:center;gap:23px}
+.maranata-link{position:relative;color:#333943;text-decoration:none;font:600 13px/1 Inter,Arial,sans-serif;white-space:nowrap;padding:30px 0 28px}
+.maranata-link:hover,.maranata-link.active{color:var(--maranata-blue)}
+.maranata-link.active:after{content:"";position:absolute;left:0;right:0;bottom:19px;height:2px;border-radius:2px;background:var(--maranata-blue)}
+.maranata-prayer{margin-left:8px;background:var(--maranata-blue);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 18px;font:700 13px/1.15 Inter,Arial,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 8px 20px rgba(0,37,81,.16)}
+.maranata-mobile-button{display:none;margin-left:auto;border:0;background:transparent;color:var(--maranata-blue);font-size:28px;cursor:pointer}
+.maranata-mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:9998;background:#fff;padding:14px 24px 24px;border-bottom:1px solid #e5e7eb;box-shadow:0 14px 30px rgba(0,37,81,.12)}
+.maranata-mobile-menu.open{display:grid;gap:4px}
+.maranata-mobile-menu a{padding:12px 4px;color:#26303d;text-decoration:none;font:600 15px Inter,Arial,sans-serif;border-bottom:1px solid #eef0f3}
+.hero-logo-clear{width:190px!important;height:190px!important;object-fit:contain!important;filter:drop-shadow(0 10px 24px rgba(0,0,0,.22))}
+@media(max-width:1050px){.maranata-links,.maranata-prayer{display:none}.maranata-mobile-button{display:block}.maranata-brand{min-width:0}.maranata-brand span{display:block}}
+@media(max-width:520px){body{padding-top:68px!important}.maranata-header{height:68px}.maranata-mobile-menu{top:68px}.maranata-nav{padding:0 16px}.maranata-brand img{width:38px;height:38px}.maranata-brand span{font-size:12px}.hero-logo-clear{width:150px!important;height:150px!important}}
+</style></head>
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary selection:text-white">
+<!-- TopNavBar -->
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/20 to-surface z-10"></div>
+<div class="w-full h-full bg-cover bg-center scale-105 animate-[subtle-zoom_20s_infinite_alternate]" data-alt="A cinematic, wide-angle photograph of a large, modern church sanctuary during a powerful worship moment. The stage is bathed in soft blue and warm gold atmospheric lighting, with hands raised in praise across the silhouetted congregation. The visual style is high-end, clean, and evokes a profound sense of sacred reverence and community energy. The image is crisp, with deep focus and a professional editorial aesthetic typical of premium church photography." style="background-image: url('assets/images/foto16.jpeg')"></div>
+</div>
+<div class="relative z-20 text-center px-gutter max-w-4xl">
+<span class="inline-block px-4 py-1 mb-6 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-label-sm text-label-sm uppercase tracking-widest animate-fade-in">Maranata Church</span>
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-white mb-8 text-shadow-premium leading-tight animate-slide-up">Juntos para a Glória de Deus</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-12 max-w-2xl mx-auto text-shadow-premium">Sua parceria é o combustível que impulsiona o Reino e transforma realidades em cada canto da nossa comunidade.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="px-8 py-4 bg-primary text-white font-button text-button rounded-full hover:translate-y-[-2px] transition-all shadow-lg" href="#formulario">Quero ser um parceiro</a>
+<a class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/30 font-button text-button rounded-full hover:bg-white/20 transition-all" href="#proposito">Saiba mais</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-white opacity-50">keyboard_double_arrow_down</span>
+</div>
+</header>
+<!-- Seção 1: Propósito -->
+<section class="py-section-gap-desktop px-gutter bg-surface" id="proposito">
+<div class="max-w-container-max-width mx-auto flex flex-col md:flex-row items-center gap-20">
+<div class="w-full md:w-1/2 scroll-reveal">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full aspect-[4/5] object-cover" data-alt="A high-quality close-up photograph of a diverse group of people sitting in a modern, light-filled church lobby, engaged in meaningful conversation. The environment is minimalist and professional, with light wood accents and white walls. The lighting is natural and soft, creating an atmosphere of authentic connection and purpose. The composition is artistic, focusing on the genuine smiles and attentive expressions of the individuals." decoding="async" loading="lazy" src="assets/images/foto16.jpeg"/>
+<div class="absolute bottom-8 left-8 right-8 p-6 glass-card rounded-xl">
+<p class="font-headline-md text-primary italic">"Ide por todo o mundo e pregai o evangelho."</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 scroll-reveal">
+<h2 class="font-display-lg text-display-lg text-primary mb-8">Nossa Missão é Coletiva</h2>
+<div class="space-y-6 text-on-surface-variant font-body-lg">
+<p>Ser um Parceiro Maranata é entender que o Reino de Deus não se constrói sozinho. É a decisão consciente de investir recursos, orações e tempo para que a mensagem da Cruz chegue mais longe.</p>
+<p>Quando você se torna um parceiro, você deixa de ser um espectador para se tornar um protagonista na expansão de projetos que salvam vidas, acolhem crianças e levam esperança onde há dor.</p>
+<p>Nosso propósito é simples: maximizar o impacto de cada oferta para que o nome de Jesus seja exaltado através de ações concretas e excelência ministerial.</p>
+</div>
+<div class="mt-10 grid grid-cols-2 gap-8">
+<div>
+<span class="block text-4xl font-bold text-primary mb-2">15+</span>
+<span class="text-on-surface-variant font-label-sm">Projetos Ativos</span>
+</div>
+<div>
+<span class="block text-4xl font-bold text-primary mb-2">10k+</span>
+<span class="text-on-surface-variant font-label-sm">Vidas Impactadas</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção 2: Benefícios -->
+<section class="py-section-gap-desktop px-gutter bg-surface-container-low" id="beneficios">
+<div class="max-w-container-max-width mx-auto text-center mb-20">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Herança de Bençãos</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">O ato de contribuir abre portas espirituais e fortalece sua caminhada com Cristo através de uma conexão ministerial profunda.</p>
+</div>
+<div class="max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-10 bg-white rounded-3xl border border-outline-variant/30 hover:shadow-xl transition-all duration-500 group scroll-reveal">
+<div class="w-16 h-16 bg-primary-fixed rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Cobertura Espiritual</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Nossa equipe pastoral e círculo de oração intercedem diariamente pela vida, família e negócios de cada parceiro aliançado.</p>
+</div>
+<!-- Card 2 -->
+<div class="p-10 bg-white rounded-3xl border border-outline-variant/30 hover:shadow-xl transition-all duration-500 group scroll-reveal" style="transition-delay: 100ms">
+<div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Participação Ativa</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Acesso exclusivo a relatórios de impacto e reuniões de visão estratégica para acompanhar de perto cada passo da obra.</p>
+</div>
+<!-- Card 3 -->
+<div class="p-10 bg-white rounded-3xl border border-outline-variant/30 hover:shadow-xl transition-all duration-500 group scroll-reveal" style="transition-delay: 200ms">
+<div class="w-16 h-16 bg-primary-container rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-4">Comunhão e Aliança</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Convites para eventos especiais de parceiros, onde celebramos as vitórias e renovamos nossa aliança de fraternidade.</p>
+</div>
+</div>
+</section>
+<!-- Seção 3: Projetos Apoiados -->
+<section class="py-section-gap-desktop px-gutter" id="projetos">
+<div class="max-w-container-max-width mx-auto mb-16 flex justify-between items-end">
+<div class="max-w-xl">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Onde sua semente floresce</h2>
+<p class="font-body-lg text-on-surface-variant">Sua contribuição é distribuída estrategicamente entre as frentes que mais precisam de suporte para expandir.</p>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 h-[700px]">
+<!-- Bento Box Style Grid -->
+<div class="md:col-span-6 lg:col-span-4 relative group rounded-3xl overflow-hidden scroll-reveal">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A touching scene of social action featuring volunteers in clean, branded white t-shirts handing out organized food baskets to a grateful family. The background is a bright, optimistic urban setting with soft morning light. The focus is on the emotional exchange, the hand-to-hand contact, and the sense of dignity provided. Minimalist aesthetic, high contrast between the primary blue of the brand and the warm skin tones." decoding="async" loading="lazy" src="assets/images/foto7.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent p-8 flex flex-col justify-end">
+<h3 class="font-headline-md text-white mb-2">Ação Social</h3>
+<p class="text-white/80 font-label-sm">Impactando famílias em vulnerabilidade.</p>
+</div>
+</div>
+<div class="md:col-span-6 lg:col-span-8 relative group rounded-3xl overflow-hidden scroll-reveal" style="transition-delay: 100ms">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide panoramic shot of a missionary activity in a remote, beautiful rural landscape. A small group of diverse individuals are gathered under a large tree, sharing a meal and stories. The lighting is the golden hour, creating a warm, divine glow. The overall feeling is one of peace, global mission, and cross-cultural unity. Sophisticated editorial style with deep saturation of blues and earth tones." decoding="async" loading="lazy" src="assets/images/foto8.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent p-8 flex flex-col justify-end">
+<h3 class="font-headline-md text-white mb-2">Missões Transculturais</h3>
+<p class="text-white/80 font-label-sm">Levando a luz do Evangelho aos confins da terra.</p>
+</div>
+</div>
+<div class="md:col-span-12 lg:col-span-3 relative group rounded-3xl overflow-hidden scroll-reveal" style="transition-delay: 200ms">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A bright, cheerful photograph of a modern 'Maranata Kids' classroom. The room is designed with minimalist aesthetics, clean lines, and soft primary colors. Children are engaged in a creative activity around a low wooden table, looking joyful and curious. High-key lighting, shallow depth of field focusing on a child's smiling face. Professional, high-end educational photography style." decoding="async" loading="lazy" src="assets/images/foto10.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent p-6 flex flex-col justify-end">
+<h3 class="font-headline-md text-white mb-1">Maranata Kids</h3>
+<p class="text-white/80 font-label-sm">Formando a próxima geração.</p>
+</div>
+</div>
+<div class="md:col-span-6 lg:col-span-4 relative group rounded-3xl overflow-hidden scroll-reveal" style="transition-delay: 300ms">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An atmospheric, urban evening scene of outdoor evangelism. A group of young adults are gathered in a modern public plaza under soft city lights, one of them speaking with passion while others listen attentively. The aesthetic is contemporary and authentic, capturing a moment of spiritual curiosity in the heart of the city. Clean compositions with sharp details and elegant lighting." decoding="async" loading="lazy" src="assets/images/foto11.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent p-6 flex flex-col justify-end">
+<h3 class="font-headline-md text-white mb-1">Evangelismo Urbano</h3>
+<p class="text-white/80 font-label-sm">Jesus nas ruas da nossa cidade.</p>
+</div>
+</div>
+<div class="md:col-span-6 lg:col-span-5 relative group rounded-3xl overflow-hidden scroll-reveal" style="transition-delay: 400ms">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A sleek, behind-the-scenes look at a high-tech church multimedia control room. Multiple monitors glow with professional video editing software and live streams. A technician's hand is visible on a high-end console. The lighting is dramatic, with cool blue accents against dark technical equipment. This image represents the digital excellence and technological reach of the church's message." decoding="async" loading="lazy" src="assets/images/foto16.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent p-6 flex flex-col justify-end">
+<h3 class="font-headline-md text-white mb-1">Multimídia e TV</h3>
+<p class="text-white/80 font-label-sm">Expandindo a voz da igreja no mundo digital.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção 4: Jornada Visual -->
+<section class="py-section-gap-desktop px-gutter bg-surface" id="impacto">
+<div class="max-w-container-max-width mx-auto">
+<div class="text-center mb-20 scroll-reveal">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">A Jornada da sua Oferta</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Veja como sua contribuição se transforma em milagres reais através da nossa estrutura ministerial.</p>
+</div>
+<div class="relative">
+<!-- Timeline Line -->
+<div class="absolute top-1/2 left-0 w-full h-[2px] bg-outline-variant/30 hidden md:block -translate-y-1/2"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group scroll-reveal">
+<div class="w-20 h-20 bg-white rounded-full border-2 border-primary flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">volunteer_activism</span>
+</div>
+<h4 class="font-headline-md text-primary mb-2">Doação</h4>
+<p class="text-on-surface-variant font-body-md">Você planta sua semente com fé e generosidade.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group scroll-reveal" style="transition-delay: 100ms">
+<div class="w-20 h-20 bg-white rounded-full border-2 border-primary flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">inventory_2</span>
+</div>
+<h4 class="font-headline-md text-primary mb-2">Recurso</h4>
+<p class="text-on-surface-variant font-body-md">Transformamos valores em Alimento, Bíblias e infraestrutura.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group scroll-reveal" style="transition-delay: 200ms">
+<div class="w-20 h-20 bg-white rounded-full border-2 border-primary flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">handshake</span>
+</div>
+<h4 class="font-headline-md text-primary mb-2">Entrega</h4>
+<p class="text-on-surface-variant font-body-md">Nossas equipes levam o auxílio e a Palavra até o necessitado.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group scroll-reveal" style="transition-delay: 300ms">
+<div class="w-20 h-20 bg-white rounded-full border-2 border-primary flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<h4 class="font-headline-md text-primary mb-2">Conversão</h4>
+<p class="text-on-surface-variant font-body-md">Uma nova vida é alcançada e o Reino se alegra.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção 5: Depoimentos -->
+<section class="py-section-gap-desktop px-gutter bg-surface-container-highest overflow-hidden" id="depoimentos">
+<div class="max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="scroll-reveal">
+<span class="font-label-sm text-primary uppercase tracking-widest mb-4 block">Vozes da Missão</span>
+<h2 class="font-display-lg text-display-lg text-primary mb-12">O que dizem nossos parceiros</h2>
+<div class="space-y-12">
+<div class="relative pl-12 border-l-4 border-primary">
+<span class="absolute left-[-20px] top-[-20px] text-8xl text-primary/10 font-serif">“</span>
+<p class="font-headline-md text-primary mb-6 italic leading-relaxed">"Fazer parte dos Parceiros Maranata mudou minha perspectiva sobre finanças. Hoje vejo que meu trabalho tem um propósito eterno e sinto a cobertura espiritual sobre minha casa."</p>
+<div>
+<h5 class="font-bold text-primary">Ricardo Silveira</h5>
+<p class="text-on-surface-variant font-label-sm">Empresário, Parceiro há 5 anos</p>
+</div>
+</div>
+<div class="relative pl-12 border-l-4 border-primary opacity-50">
+<p class="font-headline-md text-primary mb-6 italic leading-relaxed">"É emocionante ver os relatórios e saber que aquela criança alimentada no projeto teve minha pequena semente envolvida. É gratificante demais."</p>
+<div>
+<h5 class="font-bold text-primary">Ana Beatriz Mendes</h5>
+<p class="text-on-surface-variant font-label-sm">Professora, Parceira há 2 anos</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative scroll-reveal">
+<div class="aspect-[3/4] rounded-[40px] overflow-hidden rotate-2 shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="A portrait of a smiling, professional-looking couple in their 40s, standing in a brightly lit, modern architectural setting. They look confident and peaceful. The photography style is high-end lifestyle, like a luxury magazine feature. The lighting is sophisticated, with soft rim lighting that makes them stand out against the clean background. Colors are warm and inviting, dominated by the church's navy blue and white tones." decoding="async" loading="lazy" src="assets/images/foto7.jpeg"/>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-60 h-60 bg-primary-container/20 rounded-full blur-3xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Seção 6: Formulário -->
+<section class="py-section-gap-desktop px-gutter" id="formulario">
+<div class="max-w-4xl mx-auto">
+<div class="bg-white rounded-[40px] p-8 md:p-16 shadow-2xl border border-outline-variant/20 scroll-reveal">
+<div class="text-center mb-12">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Torne-se um Parceiro</h2>
+<p class="font-body-lg text-on-surface-variant">Preencha os campos abaixo e entraremos em contato para formalizar sua aliança.</p>
+</div>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Nome Completo</label>
+<input class="w-full h-12 bg-surface-container-low border-none rounded-xl px-6 focus:ring-2 focus:ring-primary transition-all" placeholder="Seu nome" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">E-mail</label>
+<input class="w-full h-12 bg-surface-container-low border-none rounded-xl px-6 focus:ring-2 focus:ring-primary transition-all" placeholder="seu@email.com" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">WhatsApp</label>
+<input class="w-full h-12 bg-surface-container-low border-none rounded-xl px-6 focus:ring-2 focus:ring-primary transition-all" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Como deseja contribuir?</label>
+<select class="w-full h-12 bg-surface-container-low border-none rounded-xl px-6 focus:ring-2 focus:ring-primary transition-all">
+<option>Parceria Mensal</option>
+<option>Oferta Única Especial</option>
+<option>Apoio a Projeto Específico</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Sua motivação (opcional)</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl px-6 py-4 focus:ring-2 focus:ring-primary transition-all" placeholder="Conte-nos brevemente o que te motiva a ser um parceiro..." rows="4"></textarea>
+</div>
+<div class="flex items-start gap-3">
+<input class="mt-1 rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-label-sm text-on-surface-variant">Concordo em receber informações sobre os projetos e impacto da Maranata Church.</span>
+</div>
+<button class="w-full py-4 bg-primary text-white font-button text-button rounded-xl hover:opacity-95 transform hover:scale-[1.01] transition-all shadow-lg flex items-center justify-center gap-2" type="submit">
+                        Quero fazer parte desta missão
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Seção 8: Encerramento -->
+<section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-primary/40 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A powerful and immersive photograph of a full church sanctuary, captured from the back of the room looking toward the stage. Thousands of people are united in a moment of prayer or worship, with a sense of immense scale and collective purpose. The architecture of the building is modern and grand. The lighting is warm and divine, with rays of light cutting through the atmosphere. The image feels sacred and monumental." decoding="async" loading="lazy" src="assets/images/foto8.jpeg"/>
+</div>
+<div class="relative z-20 text-center px-gutter">
+<h2 class="font-display-lg text-display-lg text-white mb-6 text-shadow-premium">Tudo para a Glória de Deus.</h2>
+<div class="w-20 h-1 bg-white mx-auto rounded-full opacity-50"></div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest py-section-gap-desktop border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-start w-full px-gutter max-w-container-max-width mx-auto gap-stack-lg">
+<div class="max-w-sm">
+<a class="font-headline-md text-headline-md font-bold text-primary mb-6 block" href="#">Parceiros Maranata</a>
+<p class="text-on-surface-variant font-body-md mb-8">Nossa missão é conectar pessoas ao propósito de Deus através de ações que transformam o mundo.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">videocam</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div>
+<h4 class="font-button text-primary mb-6">Institucional</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Sobre Nós</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Projetos</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Impacto Social</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-button text-primary mb-6">Ajuda</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="contato.html">Contato</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">FAQ</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Privacidade</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-button text-primary mb-6">Fale Conosco</h4>
+<ul class="space-y-4">
+<li class="text-on-surface-variant font-body-md">contato@igrejamaranata.com.br</li>
+<li class="text-on-surface-variant font-body-md">+55 (00) 0000-0000</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-container-max-width mx-auto px-gutter mt-20 pt-8 border-t border-outline-variant/10 text-center md:text-left">
+<p class="font-body-md text-on-surface-variant text-body-md opacity-60">© 2026 Igreja Maranata. Todos os direitos reservados.</p>
+</div>
+</footer>
+<script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        // Nav Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script src="assets/site.js"></script></body></html>

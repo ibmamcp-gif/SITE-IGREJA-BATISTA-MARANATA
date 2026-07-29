@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Maranata Kids - Crescendo nos caminhos do Senhor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#aac7ff",
+                    "surface-container-low": "#f4f3f8",
+                    "primary-fixed-dim": "#aac7ff",
+                    "surface-container-highest": "#e2e2e7",
+                    "outline": "#737781",
+                    "surface-dim": "#dad9df",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0d3b73",
+                    "primary-fixed": "#d6e3ff",
+                    "on-surface-variant": "#434750",
+                    "error-container": "#ffdad6",
+                    "surface-container": "#eeedf3",
+                    "on-secondary": "#ffffff",
+                    "secondary-container": "#fed488",
+                    "inverse-on-surface": "#f1f0f6",
+                    "on-surface": "#1a1c1f",
+                    "on-background": "#1a1c1f",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#713709",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-tertiary-container": "#e4935f",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#2f3035",
+                    "tertiary-fixed": "#ffdbc8",
+                    "on-secondary-fixed": "#261900",
+                    "on-primary-fixed-variant": "#1e467f",
+                    "surface-bright": "#f9f9fe",
+                    "background": "#f9f9fe",
+                    "on-primary-container": "#83a7e6",
+                    "outline-variant": "#c3c6d1",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#395e98",
+                    "surface-container-high": "#e8e7ed",
+                    "tertiary": "#421b00",
+                    "primary": "#002551",
+                    "on-tertiary-fixed": "#321300",
+                    "surface-variant": "#e2e2e7",
+                    "tertiary-fixed-dim": "#ffb68a",
+                    "secondary": "#775a19",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-secondary-container": "#785a1a",
+                    "secondary-fixed": "#ffdea5",
+                    "on-error": "#ffffff",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#632c00",
+                    "surface": "#f9f9fe",
+                    "on-primary-fixed": "#001b3e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "section-gap-desktop": "120px",
+                    "section-gap-mobile": "64px",
+                    "stack-lg": "24px",
+                    "gutter": "24px",
+                    "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "label-sm": ["Inter"],
+                    "button": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "button": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(234, 236, 240, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #002551 0%, #395e98 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<meta content="Site oficial da Igreja Batista Maranata de Macapá — Tudo para a Glória de Deus." name="description"/><link href="assets/images/Maranata.png" rel="icon"/>
+<style id="maranata-global-standard">
+:root{--maranata-blue:#002551;--maranata-blue-2:#0d3b73;--maranata-gold:#c99122}
+body{padding-top:76px!important}
+.maranata-header{position:fixed;inset:0 0 auto 0;z-index:9999;height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,37,81,.10);box-shadow:0 5px 22px rgba(0,37,81,.07)}
+.maranata-nav{height:100%;max-width:1200px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:24px}
+.maranata-brand{display:flex;align-items:center;gap:10px;min-width:215px;text-decoration:none;color:var(--maranata-blue)}
+.maranata-brand img{width:42px;height:42px;object-fit:contain;display:block}
+.maranata-brand span{font:700 14px/1.15 Inter,Arial,sans-serif;letter-spacing:-.01em}
+.maranata-links{margin-left:auto;display:flex;align-items:center;gap:23px}
+.maranata-link{position:relative;color:#333943;text-decoration:none;font:600 13px/1 Inter,Arial,sans-serif;white-space:nowrap;padding:30px 0 28px}
+.maranata-link:hover,.maranata-link.active{color:var(--maranata-blue)}
+.maranata-link.active:after{content:"";position:absolute;left:0;right:0;bottom:19px;height:2px;border-radius:2px;background:var(--maranata-blue)}
+.maranata-prayer{margin-left:8px;background:var(--maranata-blue);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 18px;font:700 13px/1.15 Inter,Arial,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 8px 20px rgba(0,37,81,.16)}
+.maranata-mobile-button{display:none;margin-left:auto;border:0;background:transparent;color:var(--maranata-blue);font-size:28px;cursor:pointer}
+.maranata-mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:9998;background:#fff;padding:14px 24px 24px;border-bottom:1px solid #e5e7eb;box-shadow:0 14px 30px rgba(0,37,81,.12)}
+.maranata-mobile-menu.open{display:grid;gap:4px}
+.maranata-mobile-menu a{padding:12px 4px;color:#26303d;text-decoration:none;font:600 15px Inter,Arial,sans-serif;border-bottom:1px solid #eef0f3}
+.hero-logo-clear{width:190px!important;height:190px!important;object-fit:contain!important;filter:drop-shadow(0 10px 24px rgba(0,0,0,.22))}
+@media(max-width:1050px){.maranata-links,.maranata-prayer{display:none}.maranata-mobile-button{display:block}.maranata-brand{min-width:0}.maranata-brand span{display:block}}
+@media(max-width:520px){body{padding-top:68px!important}.maranata-header{height:68px}.maranata-mobile-menu{top:68px}.maranata-nav{padding:0 16px}.maranata-brand img{width:38px;height:38px}.maranata-brand span{font-size:12px}.hero-logo-clear{width:150px!important;height:150px!important}}
+</style></head>
+<body class="bg-surface font-body-md text-on-surface">
+<!-- TopNavBar -->
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link active" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden" id="inicio">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center brightness-[0.9]" data-alt="A high-quality, professional photograph of diverse, happy children laughing and engaging in a creative activity within a bright, modern church environment. The lighting is soft and natural, emphasizing a premium light-mode aesthetic with warm wooden accents and soft blue and gold tones in the background. The atmosphere is joyful, serene, and welcoming, perfectly aligned with a premium institutional brand." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max-width mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm mb-stack-md">Ministério Infantil</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-md leading-tight">
+                        Crescendo nos <span class="text-gradient">caminhos do Senhor.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg leading-relaxed">
+                        Proporcionamos um ambiente seguro e apaixonante onde plantamos as primeiras sementes de fé, cultivando o amor de Deus no coração de cada criança através de ensino bíblico relevante e criativo.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-button text-button hover:shadow-lg transition-all active:scale-95">
+                            Meu filho vai participar
+                        </button>
+<button class="bg-white border border-outline-variant text-primary px-8 py-4 rounded-full font-button text-button hover:bg-surface-container-low transition-all">
+                            Conheça as turmas
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Who We Are -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white" id="quem-somos">
+<div class="max-w-container-max-width mx-auto px-gutter grid md:grid-cols-2 gap-stack-lg items-center">
+<div class="relative">
+<div class="aspect-square rounded-2xl bg-cover bg-center shadow-2xl" data-alt="A professional architectural shot of a modern, clean, and vibrant children's ministry classroom. The space features minimalist white walls, light wood furniture, and soft blue and yellow accents. Large windows let in abundant natural light, highlighting organized learning zones and high-end educational materials. The design is sophisticated, avoiding childish caricatures in favor of a premium, serene educational environment." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+<div class="absolute -bottom-8 -right-8 glass-card p-6 rounded-xl hidden lg:block max-w-xs">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2">volunteer_activism</span>
+<p class="font-label-sm text-label-sm text-on-surface">Mais de 100 voluntários dedicados ao cuidado e ensino de nossas crianças todos os meses.</p>
+</div>
+</div>
+<div class="md:pl-12">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md">Um lugar feito para eles</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
+                        O Maranata Kids não é apenas um local de cuidado; é uma igreja pensada para crianças. Acreditamos que a jornada espiritual começa nos primeiros anos de vida, por isso investimos o nosso melhor para que cada pequeno se sinta amado, valorizado e instruído na Palavra de Deus.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        Nossa pedagogia cristã foca na memorização bíblica, oração e louvor, tudo de forma lúdica e apropriada para cada fase do desenvolvimento infantil.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 rounded-lg bg-surface-container-low">
+<h4 class="font-bold text-primary mb-1">Missão</h4>
+<p class="text-label-sm text-on-surface-variant">Levar crianças a conhecerem e amarem Jesus.</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low">
+<h4 class="font-bold text-primary mb-1">Visão</h4>
+<p class="text-label-sm text-on-surface-variant">Ser referência em ensino bíblico infantil.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Age Groups (Bento Grid Style) -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest" id="turmas">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-md text-headline-md text-primary mb-4">Nossas Turmas</h2>
+<p class="text-on-surface-variant">Ambientes preparados especificamente para a linguagem e necessidade de cada idade.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Berçário -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-2xl bg-primary text-on-primary h-[400px] transition-all hover:-translate-y-2">
+<div class="absolute inset-0 opacity-40 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A soft, comforting close-up image of a clean nursery setting with premium baby gear. The color palette consists of whites, soft greys, and navy blue accents. The lighting is diffused and warm, evoking a sense of absolute peace and professional care. High-end textiles and wooden toys are visible, representing a safe and sacred space for infants." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
+<div class="relative h-full flex flex-col justify-end p-8">
+<span class="text-secondary-fixed font-bold mb-2">0 a 1 ano</span>
+<h3 class="text-3xl font-bold mb-3">Berçário</h3>
+<p class="text-on-primary/80 max-w-md">Cuidado amoroso e estimulação sensorial em um ambiente calmo e higienizado.</p>
+</div>
+</div>
+<!-- Maternal -->
+<div class="group relative overflow-hidden rounded-2xl bg-white border border-outline-variant h-[400px] transition-all hover:-translate-y-2 hover:shadow-xl">
+<div class="p-8 flex flex-col h-full">
+<div class="mb-auto">
+<span class="text-secondary font-bold mb-2 block">2 a 3 anos</span>
+<h3 class="text-2xl font-bold text-primary mb-3">Maternal</h3>
+<p class="text-on-surface-variant">Primeiras histórias bíblicas através de cores, músicas e atividades manuais.</p>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-medium">Lúdico</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-medium">Socialização</span>
+</div>
+</div>
+</div>
+<!-- Kids 1 -->
+<div class="group relative overflow-hidden rounded-2xl bg-white border border-outline-variant h-[400px] transition-all hover:-translate-y-2 hover:shadow-xl">
+<div class="p-8 flex flex-col h-full">
+<div class="mb-auto">
+<span class="text-secondary font-bold mb-2 block">4 a 6 anos</span>
+<h3 class="text-2xl font-bold text-primary mb-3">Kids 1</h3>
+<p class="text-on-surface-variant">Explorando as grandes aventuras da Bíblia e fundamentos do caráter cristão.</p>
+</div>
+<div class="flex gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-medium">Histórias</span>
+<span class="px-3 py-1 rounded-full bg-surface-container-high text-xs font-medium">Arte</span>
+</div>
+</div>
+</div>
+<!-- Kids 2 -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-2xl bg-surface-container-high h-[300px] transition-all hover:-translate-y-2">
+<div class="grid md:grid-cols-2 h-full">
+<div class="p-10 flex flex-col justify-center">
+<span class="text-secondary font-bold mb-2">7 a 10 anos</span>
+<h3 class="text-3xl font-bold text-primary mb-3">Kids 2</h3>
+<p class="text-on-surface-variant max-w-md">Discipulado focado na aplicação da Palavra no dia a dia, escola e família.</p>
+</div>
+<div class="hidden md:block bg-cover bg-center" data-alt="A modern and tech-friendly classroom for older children. It features collaborative workstations, a smart board, and a clean, organized layout. The style is professional and academic but remains inviting with vibrant color accents. The image shows a space where faith meets intellect, perfect for a pre-teen ministry setting." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Schedule -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white overflow-hidden">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/3">
+<h2 class="font-headline-md text-headline-md text-primary mb-6">Nossa Programação</h2>
+<p class="text-on-surface-variant mb-8">Momentos dedicados para que os pais possam cultuar tranquilos enquanto seus filhos aprendem com excelência.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant bg-surface">
+<span class="material-symbols-outlined text-primary text-3xl">calendar_today</span>
+<div>
+<h4 class="font-bold">Domingos</h4>
+<p class="text-sm text-on-surface-variant">09:00 e 18:30</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 rounded-xl border border-outline-variant bg-surface">
+<span class="material-symbols-outlined text-primary text-3xl">event_repeat</span>
+<div>
+<h4 class="font-bold">Quartas-feiras</h4>
+<p class="text-sm text-on-surface-variant">20:00</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-outline-variant before:to-transparent">
+<!-- Step 1 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-on-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">login</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl border border-outline-variant bg-white shadow-sm">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-primary">Check-in e Recepção</div>
+<time class="font-label-sm text-secondary">15 min antes</time>
+</div>
+<div class="text-on-surface-variant text-sm">Acolhimento caloroso e identificação por etiquetas de segurança.</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-on-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">lyrics</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl border border-outline-variant bg-white shadow-sm">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-primary">Louvor e Dinâmicas</div>
+<time class="font-label-sm text-secondary">20 min</time>
+</div>
+<div class="text-on-surface-variant text-sm">Momento de celebração e quebra-gelo para integração das crianças.</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-primary text-on-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-sm">menu_book</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[45%] p-6 rounded-xl border border-outline-variant bg-white shadow-sm">
+<div class="flex items-center justify-between space-x-2 mb-1">
+<div class="font-bold text-primary">Lição Bíblica</div>
+<time class="font-label-sm text-secondary">40 min</time>
+</div>
+<div class="text-on-surface-variant text-sm">Ensino focado na idade com recursos visuais e atividades práticas.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Safety Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-primary text-on-primary" id="seguranca">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="material-symbols-outlined text-secondary text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h2 class="font-headline-md text-headline-md mb-4">Segurança é nossa prioridade</h2>
+<p class="text-on-primary-container">Utilizamos protocolos rigorosos para garantir que você tenha paz de espírito enquanto adora ao Senhor.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="p-8 rounded-2xl bg-primary-container/30 border border-white/10 text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-secondary">qr_code_scanner</span>
+<h4 class="font-bold text-xl mb-3">Check-in Digital</h4>
+<p class="text-sm text-on-primary/70">A criança só é retirada por quem possui a etiqueta correspondente, gerada em tempo real.</p>
+</div>
+<div class="p-8 rounded-2xl bg-primary-container/30 border border-white/10 text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-secondary">health_and_safety</span>
+<h4 class="font-bold text-xl mb-3">Protocolos de Saúde</h4>
+<p class="text-sm text-on-primary/70">Ambientes higienizados e triagem na entrada para garantir o bem-estar de todos.</p>
+</div>
+<div class="p-8 rounded-2xl bg-primary-container/30 border border-white/10 text-center">
+<span class="material-symbols-outlined text-4xl mb-4 text-secondary">badge</span>
+<h4 class="font-bold text-xl mb-3">Equipe Treinada</h4>
+<p class="text-sm text-on-primary/70">Todos os voluntários passam por verificação de antecedentes e treinamento de primeiros socorros.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white" id="equipe">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Quem cuida deles</h2>
+<p class="text-on-surface-variant">Liderança apaixonada e capacitada para o ministério.</p>
+</div>
+<button class="hidden md:block text-primary font-bold hover:underline">Ver todos os voluntários</button>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Member 1 -->
+<div class="text-center group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a female ministry coordinator. She is wearing professional yet approachable attire, smiling warmly against a soft-focus minimalist background. The lighting is flattering and studio-quality, reflecting a trustworthy and competent leadership role within a premium institutional setting." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+<h4 class="font-bold text-primary">Ana Paula Silveira</h4>
+<p class="text-label-sm text-on-surface-variant">Coordenadora Geral</p>
+</div>
+<!-- Member 2 -->
+<div class="text-center group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a male ministry leader. He has a friendly and reassuring expression, dressed in a smart-casual deep blue shirt. The background is clean and slightly out of focus. The overall aesthetic is professional, modern, and aligned with the church's premium branding." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+<h4 class="font-bold text-primary">Marcos Oliveira</h4>
+<p class="text-label-sm text-on-surface-variant">Líder Kids 2</p>
+</div>
+<!-- Member 3 -->
+<div class="text-center group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a smiling female educator. Her warm expression and approachable demeanor are highlighted by soft, high-key lighting. The style is minimalist and high-end, focusing on the human element and the professionalism of the ministry staff." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+<h4 class="font-bold text-primary">Julia Santos</h4>
+<p class="text-label-sm text-on-surface-variant">Responsável Berçário</p>
+</div>
+<!-- Member 4 -->
+<div class="text-center group">
+<div class="relative overflow-hidden rounded-2xl aspect-[3/4] mb-4">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="A professional portrait of a male youth worker. He looks confident and friendly, set against a clean, modern architectural background. The lighting is professional and the color palette is consistent with the deep blue and white of the Maranata Kids brand." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+<h4 class="font-bold text-primary">Ricardo Mendes</h4>
+<p class="text-label-sm text-on-surface-variant">Coordenador Pedagógico</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-primary text-center mb-16">Momentos Maranata Kids</h2>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+<div class="rounded-2xl overflow-hidden break-inside-avoid shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="A vibrant shot of children singing during a worship time. They are engaged and joyful, with soft stage lighting in the background. The photo is high-resolution and professionally edited to maintain a premium look, capturing a genuine moment of spiritual connection." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+<div class="rounded-2xl overflow-hidden break-inside-avoid shadow-lg">
+<div class="w-full aspect-square bg-cover bg-center" data-alt="A top-down shot of children's hands working together on a colorful craft project. The surfaces are clean and the materials are high-quality. The image emphasizes collaboration and creativity within the ministry's programs." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+<div class="rounded-2xl overflow-hidden break-inside-avoid shadow-lg">
+<div class="w-full aspect-[4/5] bg-cover bg-center" data-alt="A heartwarming interaction between a volunteer teacher and a young child. The teacher is crouched to the child's eye level, both smiling. The lighting is warm and the focus is sharp on their expressions, highlighting the personal care provided." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+<div class="rounded-2xl overflow-hidden break-inside-avoid shadow-lg">
+<div class="w-full aspect-video bg-cover bg-center" data-alt="A wide architectural shot of the playground area, showing modern and safe play equipment. The area is filled with soft light and features clean lines and the ministry's brand colors. It looks like a high-end, safe haven for children." style="background-image: url('assets/images/LOGO MARANATA KIDS.png')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white" id="faq">
+<div class="max-w-3xl mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-primary text-center mb-12">Perguntas Frequentes</h2>
+<div class="space-y-4">
+<details class="group border border-outline-variant rounded-xl overflow-hidden" open="">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-white hover:bg-surface-container-low transition-colors list-none">
+<span class="font-bold text-primary">Como faço para cadastrar meu filho?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/30">
+                            O cadastro pode ser feito presencialmente no balcão de check-in em sua primeira visita. Nossos voluntários solicitarão informações básicas de contato, saúde e alergias.
+                        </div>
+</details>
+<details class="group border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-white hover:bg-surface-container-low transition-colors list-none">
+<span class="font-bold text-primary">Qual a idade mínima para participar?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/30">
+                            Recebemos bebês a partir dos 4 meses no nosso berçário, que conta com toda infraestrutura necessária para o cuidado dos pequenos.
+                        </div>
+</details>
+<details class="group border border-outline-variant rounded-xl overflow-hidden">
+<summary class="flex justify-between items-center p-6 cursor-pointer bg-white hover:bg-surface-container-low transition-colors list-none">
+<span class="font-bold text-primary">E se meu filho chorar muito?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-on-surface-variant border-t border-outline-variant/30">
+                            Nossa equipe é treinada para acolher e acalmar. Caso a criança não se sinta confortável após algum tempo, entraremos em contato imediatamente através do número cadastrado no check-in.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- CTA Final -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="bg-primary-container rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-12 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'wght' 700;">child_care</span>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-6">Estamos esperando por vocês neste domingo!</h2>
+<p class="text-on-primary-container text-body-lg mb-10">Prepare o coração para o que Deus irá fazer na vida do seu filho.</p>
+<button class="bg-white text-primary px-10 py-5 rounded-full font-button text-lg hover:bg-secondary-fixed transition-all active:scale-95 shadow-xl">
+                            Quero cadastrar minha família
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="max-w-container-max-width mx-auto py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-headline-md text-headline-md font-extrabold text-primary mb-2">Maranata Kids</div>
+<p class="text-on-surface-variant font-label-sm text-label-sm text-center md:text-left">© 2026 Igreja Batista Maranata. Todos os direitos reservados.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors" href="#">Privacidade</a>
+<a class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors" href="#">Termos de Uso</a>
+<a class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors" href="contato.html">Contato</a>
+<a class="text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors" href="#">Localização</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">camera_alt</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll behavior for the header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.replace('bg-surface/80', 'bg-white');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.replace('bg-white', 'bg-surface/80');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+<script src="assets/site.js"></script></body></html>

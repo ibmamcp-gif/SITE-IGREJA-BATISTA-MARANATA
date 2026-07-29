@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Maranata Worship | Adoração com Excelência</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#ffdea5",
+                    "outline-variant": "#c3c6d1",
+                    "surface-variant": "#e2e2e7",
+                    "surface-bright": "#f9f9fe",
+                    "on-surface": "#1a1c1f",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#434750",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#001b3e",
+                    "surface-container-high": "#e8e7ed",
+                    "surface-container-low": "#f4f3f8",
+                    "on-tertiary-fixed-variant": "#713709",
+                    "error": "#ba1a1a",
+                    "surface": "#f9f9fe",
+                    "outline": "#737781",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#2f3035",
+                    "on-tertiary": "#ffffff",
+                    "tertiary": "#421b00",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#632c00",
+                    "secondary-container": "#fed488",
+                    "background": "#f9f9fe",
+                    "secondary-fixed-dim": "#e9c176",
+                    "on-secondary-fixed": "#261900",
+                    "inverse-primary": "#aac7ff",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container": "#eeedf3",
+                    "primary-fixed-dim": "#aac7ff",
+                    "primary-container": "#0d3b73",
+                    "on-background": "#1a1c1f",
+                    "inverse-on-surface": "#f1f0f6",
+                    "surface-tint": "#395e98",
+                    "surface-container-highest": "#e2e2e7",
+                    "on-secondary-container": "#785a1a",
+                    "primary": "#002551",
+                    "on-tertiary-fixed": "#321300",
+                    "on-tertiary-container": "#e4935f",
+                    "primary-fixed": "#d6e3ff",
+                    "tertiary-fixed": "#ffdbc8",
+                    "tertiary-fixed-dim": "#ffb68a",
+                    "secondary": "#775a19",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#83a7e6",
+                    "on-primary-fixed-variant": "#1e467f",
+                    "surface-dim": "#dad9df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "24px",
+                    "stack-sm": "8px",
+                    "section-gap-desktop": "120px",
+                    "gutter": "24px",
+                    "section-gap-mobile": "64px",
+                    "container-max-width": "1200px",
+                    "stack-md": "16px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "button": ["Inter"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "button": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 37, 81, 0.7), rgba(0, 37, 81, 0.9)), url('placeholder');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+        }
+        .masonry {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) { .masonry { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry { column-count: 3; } }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+<meta content="Site oficial da Igreja Batista Maranata de Macapá — Tudo para a Glória de Deus." name="description"/><link href="assets/images/Maranata.png" rel="icon"/>
+<style id="maranata-global-standard">
+:root{--maranata-blue:#002551;--maranata-blue-2:#0d3b73;--maranata-gold:#c99122}
+body{padding-top:76px!important}
+.maranata-header{position:fixed;inset:0 0 auto 0;z-index:9999;height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,37,81,.10);box-shadow:0 5px 22px rgba(0,37,81,.07)}
+.maranata-nav{height:100%;max-width:1200px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:24px}
+.maranata-brand{display:flex;align-items:center;gap:10px;min-width:215px;text-decoration:none;color:var(--maranata-blue)}
+.maranata-brand img{width:42px;height:42px;object-fit:contain;display:block}
+.maranata-brand span{font:700 14px/1.15 Inter,Arial,sans-serif;letter-spacing:-.01em}
+.maranata-links{margin-left:auto;display:flex;align-items:center;gap:23px}
+.maranata-link{position:relative;color:#333943;text-decoration:none;font:600 13px/1 Inter,Arial,sans-serif;white-space:nowrap;padding:30px 0 28px}
+.maranata-link:hover,.maranata-link.active{color:var(--maranata-blue)}
+.maranata-link.active:after{content:"";position:absolute;left:0;right:0;bottom:19px;height:2px;border-radius:2px;background:var(--maranata-blue)}
+.maranata-prayer{margin-left:8px;background:var(--maranata-blue);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 18px;font:700 13px/1.15 Inter,Arial,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 8px 20px rgba(0,37,81,.16)}
+.maranata-mobile-button{display:none;margin-left:auto;border:0;background:transparent;color:var(--maranata-blue);font-size:28px;cursor:pointer}
+.maranata-mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:9998;background:#fff;padding:14px 24px 24px;border-bottom:1px solid #e5e7eb;box-shadow:0 14px 30px rgba(0,37,81,.12)}
+.maranata-mobile-menu.open{display:grid;gap:4px}
+.maranata-mobile-menu a{padding:12px 4px;color:#26303d;text-decoration:none;font:600 15px Inter,Arial,sans-serif;border-bottom:1px solid #eef0f3}
+.hero-logo-clear{width:190px!important;height:190px!important;object-fit:contain!important;filter:drop-shadow(0 10px 24px rgba(0,0,0,.22))}
+@media(max-width:1050px){.maranata-links,.maranata-prayer{display:none}.maranata-mobile-button{display:block}.maranata-brand{min-width:0}.maranata-brand span{display:block}}
+@media(max-width:520px){body{padding-top:68px!important}.maranata-header{height:68px}.maranata-mobile-menu{top:68px}.maranata-nav{padding:0 16px}.maranata-brand img{width:38px;height:38px}.maranata-brand span{font-size:12px}.hero-logo-clear{width:150px!important;height:150px!important}}
+</style></head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link active" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+<div class="absolute inset-0 z-0 hero-gradient" data-alt="A professional worship team performing on a large church stage with dramatic lighting. The lead singer is emotive, holding a microphone, surrounded by musicians with electric guitars and drums. The atmosphere is energetic yet sacred, with deep navy and subtle gold lighting casting soft glows across the scene. The overall style is high-end, clean, and cinematic."></div>
+<div class="relative z-10 max-w-4xl px-gutter">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-stack-md">
+                Adorando ao Senhor com excelência.
+            </h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-stack-lg max-w-2xl mx-auto">
+                Unindo um coração entregue à precisão técnica para oferecer o nosso melhor Àquele que é digno de todo louvor.
+            </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<a class="bg-white text-primary px-8 py-4 rounded-full font-button text-button hover:bg-surface-container-low transition-colors inline-flex items-center justify-center" href="#playlist">
+<span class="material-symbols-outlined mr-2">play_circle</span> Ouvir Playlist
+                </a>
+<a class="border border-white/30 text-white px-8 py-4 rounded-full font-button text-button hover:bg-white/10 transition-colors" href="#visao">
+                    Conheça nossa Visão
+                </a>
+</div>
+</div>
+</header>
+<!-- Visão Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white transition-all duration-700 opacity-100 translate-y-0" id="visao">
+<div class="max-w-container-max-width mx-auto px-gutter grid md:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-secondary font-label-sm text-label-sm tracking-widest uppercase block mb-4">Nossa Identidade</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-lg">Essência e Propósito</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>O Maranata Louvor e Adoração não é apenas um grupo de músicos, mas um corpo de adoradores comprometidos com a presença de Deus e o serviço à Igreja local.</p>
+<p>Nossa visão fundamenta-se na **Santidade**, **Submissão** e **Serviço**. Acreditamos que a música é uma ferramenta poderosa de conexão espiritual, e por isso, cuidamos de cada detalhe com reverência.</p>
+<p>Buscamos a excelência técnica não como um fim em si mesma, mas como uma oferta digna para o Rei dos Reis.</p>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-xl" data-alt="A close-up, artistic shot of a musician's hands resting on a Bible atop a wooden surface. Next to it, a subtle gold-rimmed cup of coffee and a sheet of music lyrics. The lighting is soft and morning-like, filtering through a nearby window. The color palette is warm whites, wood tones, and soft navy shadows, evoking a sense of peaceful preparation and devotion." style="background-image: url('assets/images/foto17.jpeg')"></div>
+<div class="absolute -bottom-8 -left-8 bg-secondary-container p-8 rounded-xl hidden md:block max-w-[240px]">
+<p class="font-headline-md text-headline-md text-on-secondary-container">120+</p>
+<p class="font-label-sm text-label-sm text-on-secondary-container/80">Ministros e Voluntários servindo semanalmente</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Escala e Ensaios -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest transition-all duration-700 opacity-100 translate-y-0" id="escala">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-primary">Organização e Preparo</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4">Nossa rotina de serviço e aperfeiçoamento constante.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Escala Mensal -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 card-hover transition-all duration-300">
+<div class="w-12 h-12 bg-primary-fixed rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary mb-4">Escala Mensal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Planejamento antecipado via Planning Center para que todos possam se organizar com excelência.</p>
+<ul class="space-y-3 font-label-sm text-label-sm text-on-surface">
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Definição de bandas</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Repertório sugerido</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Confirmação de presença</li>
+</ul>
+</div>
+<!-- Ensaios Gerais -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 card-hover transition-all duration-300" id="ensaios">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center text-secondary mb-6">
+<span class="material-symbols-outlined">music_note</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary mb-4">Ensaios Semanais</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Momentos de alinhamento técnico e espiritual todas as quintas-feiras às 19h30.</p>
+<ul class="space-y-3 font-label-sm text-label-sm text-on-surface">
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Estudo individual prévio</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Alinhamento de arranjos</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Devocional em grupo</li>
+</ul>
+</div>
+<!-- Workshop & Treino -->
+<div class="bg-white p-8 rounded-2xl border border-outline-variant/30 card-hover transition-all duration-300">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-xl flex items-center justify-center text-tertiary mb-6">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h3 class="font-headline-md text-[24px] text-primary mb-4">Desenvolvimento</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Workshops trimestrais com profissionais para aperfeiçoamento das técnicas vocais e instrumentais.</p>
+<ul class="space-y-3 font-label-sm text-label-sm text-on-surface">
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Masterclasses</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Técnica Vocal</li>
+<li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2 text-[18px]">check_circle</span> Teoria Musical</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Tecnologia Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-primary text-on-primary overflow-hidden transition-all duration-700 opacity-100 translate-y-0" id="tecnologia">
+<div class="max-w-container-max-width mx-auto px-gutter flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<div class="rounded-xl overflow-hidden aspect-[4/5]" data-alt="A close-up shot of a high-end digital sound mixing console in a dimly lit environment. The faders are illuminated with subtle blue and orange LEDs, reflecting the meticulous attention to sound quality. The depth of field is shallow, focusing on the center sliders. The overall aesthetic is professional, sleek, and high-tech." style="background-image: url('assets/images/foto17.jpeg')"></div>
+<div class="rounded-xl overflow-hidden aspect-square" data-alt="A cinematic shot of stage lighting fixtures (moving heads) suspended from a black truss. The lights are casting narrow, sharp beams of gold light into a hazy, atmospheric room. The background is a deep navy blue, creating a high-contrast and sophisticated visual environment." style="background-image: url('assets/images/foto17.jpeg')"></div>
+</div>
+<div class="space-y-4">
+<div class="rounded-xl overflow-hidden aspect-square" data-alt="An overhead shot of a guitarist's pedalboard, featuring various high-quality stompboxes connected by clean cabling. The guitar (a classic white electric model) is partially visible at the bottom. The lighting is soft and focused, highlighting the professional equipment used in the worship service." style="background-image: url('assets/images/foto17.jpeg')"></div>
+<div class="rounded-xl overflow-hidden aspect-[4/5]" data-alt="A modern church sanctuary during a soundcheck. A large LED screen in the background shows minimalist worship graphics. The empty seats are bathed in a soft blue ambient light, and the stage is ready with instruments. The atmosphere is quiet, organized, and professional." style="background-image: url('assets/images/foto17.jpeg')"></div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="font-headline-md text-headline-md mb-stack-lg">Infraestrutura e Técnica</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container mb-12">
+                    Investimos em tecnologia de ponta para que nada seja um obstáculo entre a congregação e a experiência de adoração.
+                </p>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">settings_input_component</span>
+</div>
+<div>
+<h4 class="font-button text-button mb-1">Áudio de Alta Fidelidade</h4>
+<p class="font-label-sm text-label-sm text-on-primary-container/70">Sistemas de monitoramento in-ear e mixagem digital via Dante.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">lightbulb</span>
+</div>
+<div>
+<h4 class="font-button text-button mb-1">Iluminação Imersiva</h4>
+<p class="font-label-sm text-label-sm text-on-primary-container/70">Cenografia pensada para criar ambientes propícios à oração e celebração.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">connected_tv</span>
+</div>
+<div>
+<h4 class="font-button text-button mb-1">Transmissão e LED</h4>
+<p class="font-label-sm text-label-sm text-on-primary-container/70">Experiência visual integrada para quem está no templo ou em casa.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Galeria Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white transition-all duration-700 opacity-100 translate-y-0" id="galeria">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Momentos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Nossa jornada de adoração capturada em imagens.</p>
+</div>
+<button class="hidden md:flex items-center text-primary font-button text-button hover:underline">
+                    Ver mais no Instagram <span class="material-symbols-outlined ml-2">open_in_new</span>
+</button>
+</div>
+<div class="masonry">
+<div class="masonry-item rounded-2xl overflow-hidden">
+<img class="w-full" data-alt="A wide shot of a crowded church sanctuary with hundreds of people with their hands raised in worship. The stage is dimly lit with soft blue and purple lights, creating a peaceful and spiritual atmosphere. The composition is cinematic and evokes a strong sense of community and devotion." decoding="async" loading="lazy" src="assets/images/foto17.jpeg"/>
+</div>
+<div class="masonry-item rounded-2xl overflow-hidden">
+<img class="w-full" data-alt="A close-up portrait of a female worship leader singing with her eyes closed in deep concentration. A soft spotlight highlights her face against a dark background. She wears a simple, elegant outfit. The mood is intimate and focused on the spiritual experience." decoding="async" loading="lazy" src="assets/images/foto18.png"/>
+</div>
+<div class="masonry-item rounded-2xl overflow-hidden">
+<img class="w-full" data-alt="The worship team gathered in a circle in a backstage room before a service, praying together. The lighting is warm and natural, creating a sense of unity and preparation. The scene is candid and authentic, showing the heart behind the ministry." decoding="async" loading="lazy" src="assets/images/foto1.jpeg"/>
+</div>
+<div class="masonry-item rounded-2xl overflow-hidden">
+<img class="w-full" data-alt="A high-angle shot of the stage during a vibrant praise song. The band is in full motion, with the drummer and guitarists playing energetically. Bright yellow and white lights crisscross the stage, creating a celebratory and joyful feeling." decoding="async" loading="lazy" src="assets/images/foto17.jpeg"/>
+</div>
+<div class="masonry-item rounded-2xl overflow-hidden">
+<img class="w-full" data-alt="A beautiful detail shot of a piano keyboard being played by an experienced musician. Dust motes dance in a beam of sunlight hitting the keys. The focus is sharp on the fingers and the wood grain of the instrument. A very artistic and high-end image." decoding="async" loading="lazy" src="assets/images/foto18.png"/>
+</div>
+<div class="masonry-item rounded-2xl overflow-hidden">
+<img class="w-full" data-alt="A scenic shot of the church altar at night, decorated with simple white flowers and elegant candles. In the background, the Maranata Worship logo is subtly projected on a textured wall. The atmosphere is serene and inviting." decoding="async" loading="lazy" src="assets/images/foto1.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Vídeos Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-low transition-all duration-700 opacity-100 translate-y-0" id="videos">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-primary mb-12 text-center">Últimos Lançamentos</h2>
+<div class="mb-12">
+<div class="relative aspect-video rounded-3xl overflow-hidden group shadow-2xl">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A cinematic video thumbnail showing the Maranata Worship team recording a live session in a modern studio. The lead singer is in the foreground, with the band visible in the background through a soft bokeh effect. Deep blue and warm orange lights dominate the scene. A large white 'Play' button icon is centered." style="background-image: url('assets/images/foto17.jpeg')"></div>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/40 transition-colors flex items-center justify-center">
+<div class="w-24 h-24 bg-white/90 rounded-full flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-[48px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white/70 font-label-sm text-label-sm mb-2 uppercase tracking-widest">Destaque</p>
+<h3 class="text-white font-headline-md text-headline-md">Vim Adorar (Live Session)</h3>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="group cursor-pointer">
+<div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover" data-alt="Thumbnail of a worship video featuring a full congregation singing. Soft lens flares and a bright, airy aesthetic. The title overlay says 'Ao Teu Nome'. The design is clean and professional." decoding="async" loading="lazy" src="assets/images/foto17.jpeg"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/40 transition-opacity">
+<span class="material-symbols-outlined text-white text-[40px]">play_circle</span>
+</div>
+</div>
+<h4 class="font-button text-button text-primary">Ao Teu Nome</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">2.4M Visualizações • Live em Maranata</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover" data-alt="Thumbnail for a worship video with a focus on an acoustic guitar player. The lighting is warm and focused. The title overlay says 'Pai Nosso'. Modern, high-end production style." decoding="async" loading="lazy" src="assets/images/foto18.png"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/40 transition-opacity">
+<span class="material-symbols-outlined text-white text-[40px]">play_circle</span>
+</div>
+</div>
+<h4 class="font-button text-button text-primary">Pai Nosso</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">800K Visualizações • Estúdio</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video rounded-xl overflow-hidden mb-4 relative">
+<img class="w-full h-full object-cover" data-alt="Thumbnail showing a montage of various church events and worship moments. The title overlay says 'Nossa História'. Deep blue and gold tones." decoding="async" loading="lazy" src="assets/images/foto1.jpeg"/>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 bg-black/40 transition-opacity">
+<span class="material-symbols-outlined text-white text-[40px]">play_circle</span>
+</div>
+</div>
+<h4 class="font-button text-button text-primary">Documentário: Nossa História</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">150K Visualizações • Especial 10 Anos</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Playlist Section -->
+<section class="py-section-gap-mobile md:py-section-gap-desktop bg-white transition-all duration-700 opacity-100 translate-y-0" id="playlist">
+<div class="max-w-container-max-width mx-auto px-gutter">
+<div class="bg-primary-container rounded-[32px] p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
+<div class="w-full md:w-1/3">
+<div class="aspect-square rounded-2xl shadow-2xl overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A stylized album cover for 'Maranata Worship Essentials'. It features a minimalist design with a deep navy background and an elegant gold line drawing of a cross and a musical note merging. The text is in a sophisticated serif font. The lighting in the image is moody and high-end." decoding="async" loading="lazy" src="assets/images/foto17.jpeg"/>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<span class="bg-secondary/20 text-secondary-fixed-dim px-4 py-1 rounded-full font-label-sm text-label-sm mb-6 inline-block">Ouça onde quiser</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-stack-md">Maranata Louvor e Adoração Essentials</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container/80 mb-8">
+                        Leve a nossa adoração para o seu dia a dia. Selecionamos as canções mais marcantes do nosso ministério para edificar a sua vida.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="flex items-center gap-3 bg-white px-6 py-3 rounded-full hover:bg-surface-container-high transition-colors" href="#">
+<img alt="Spotify" class="w-6 h-6" decoding="async" loading="lazy" src="assets/images/foto18.png"/>
+<span class="font-button text-button text-primary">Spotify</span>
+</a>
+<a class="flex items-center gap-3 bg-white px-6 py-3 rounded-full hover:bg-surface-container-high transition-colors" href="#">
+<img alt="Apple Music" class="w-6 h-6" decoding="async" loading="lazy" src="assets/images/foto1.jpeg"/>
+<span class="font-button text-button text-primary">Apple Music</span>
+</a>
+<a class="flex items-center gap-3 bg-white px-6 py-3 rounded-full hover:bg-surface-container-high transition-colors" href="#">
+<img alt="YouTube Music" class="w-6 h-6" decoding="async" loading="lazy" src="assets/images/foto17.jpeg"/>
+<span class="font-button text-button text-primary">YouTube Music</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest dark:bg-inverse-surface border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter py-stack-lg max-w-container-max-width mx-auto">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="font-headline-md text-headline-md text-primary">Maranata Louvor e Adoração</div>
+<div class="hidden md:block h-6 w-px bg-outline-variant"></div>
+<div class="flex gap-6 font-label-sm text-label-sm">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Privacidade</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Termos de Uso</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="contato.html">Contato</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Redes Sociais</a>
+</div>
+</div>
+<div class="mt-8 md:mt-0 font-label-sm text-label-sm text-on-surface-variant">
+                © 2026 Igreja Batista Maranata - Ministério de Louvor. Todos os direitos reservados.
+            </div>
+</div>
+</footer>
+<script>
+        // Simple scroll effect for navbar
+        const nav = document.getElementById('top-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md', 'bg-white/95');
+                nav.classList.remove('bg-white/80');
+            } else {
+                nav.classList.remove('shadow-md', 'bg-white/95');
+                nav.classList.add('bg-white/80');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+<script src="assets/site.js"></script></body></html>

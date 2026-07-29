@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pedidos de Oração | Maranata</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#e9c176",
+                    "primary": "#002551",
+                    "inverse-surface": "#2f3035",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#321300",
+                    "tertiary-container": "#632c00",
+                    "primary-fixed-dim": "#aac7ff",
+                    "on-secondary-container": "#785a1a",
+                    "on-primary-fixed": "#001b3e",
+                    "surface-bright": "#f9f9fe",
+                    "on-surface-variant": "#434750",
+                    "tertiary": "#421b00",
+                    "secondary-container": "#fed488",
+                    "on-surface": "#1a1c1f",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#ffb68a",
+                    "tertiary-fixed": "#ffdbc8",
+                    "surface-dim": "#dad9df",
+                    "on-primary-container": "#83a7e6",
+                    "on-background": "#1a1c1f",
+                    "on-secondary-fixed": "#261900",
+                    "outline-variant": "#c3c6d1",
+                    "error": "#ba1a1a",
+                    "primary-fixed": "#d6e3ff",
+                    "secondary-fixed": "#ffdea5",
+                    "on-tertiary-fixed-variant": "#713709",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f4f3f8",
+                    "outline": "#737781",
+                    "inverse-primary": "#aac7ff",
+                    "inverse-on-surface": "#f1f0f6",
+                    "surface": "#f9f9fe",
+                    "background": "#f9f9fe",
+                    "on-primary-fixed-variant": "#1e467f",
+                    "surface-container-highest": "#e2e2e7",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e2e2e7",
+                    "surface-tint": "#395e98",
+                    "on-tertiary-container": "#e4935f",
+                    "surface-container-high": "#e8e7ed",
+                    "surface-container": "#eeedf3",
+                    "secondary": "#775a19",
+                    "primary-container": "#0d3b73",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-gap-mobile": "64px",
+                    "section-gap-desktop": "120px",
+                    "stack-lg": "24px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px",
+                    "container-max-width": "1200px"
+            },
+            "fontFamily": {
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "button": ["Inter"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "button": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(234, 236, 240, 0.5);
+            box-shadow: 0px 4px 20px rgba(0,0,0,0.04);
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(249,249,254,1) 100%);
+        }
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 12px 30px rgba(0,0,0,0.08);
+        }
+    </style>
+<meta content="Site oficial da Igreja Batista Maranata de Macapá — Tudo para a Glória de Deus." name="description"/><link href="assets/images/Maranata.png" rel="icon"/>
+<style id="maranata-global-standard">
+:root{--maranata-blue:#002551;--maranata-blue-2:#0d3b73;--maranata-gold:#c99122}
+body{padding-top:76px!important}
+.maranata-header{position:fixed;inset:0 0 auto 0;z-index:9999;height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,37,81,.10);box-shadow:0 5px 22px rgba(0,37,81,.07)}
+.maranata-nav{height:100%;max-width:1200px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:24px}
+.maranata-brand{display:flex;align-items:center;gap:10px;min-width:215px;text-decoration:none;color:var(--maranata-blue)}
+.maranata-brand img{width:42px;height:42px;object-fit:contain;display:block}
+.maranata-brand span{font:700 14px/1.15 Inter,Arial,sans-serif;letter-spacing:-.01em}
+.maranata-links{margin-left:auto;display:flex;align-items:center;gap:23px}
+.maranata-link{position:relative;color:#333943;text-decoration:none;font:600 13px/1 Inter,Arial,sans-serif;white-space:nowrap;padding:30px 0 28px}
+.maranata-link:hover,.maranata-link.active{color:var(--maranata-blue)}
+.maranata-link.active:after{content:"";position:absolute;left:0;right:0;bottom:19px;height:2px;border-radius:2px;background:var(--maranata-blue)}
+.maranata-prayer{margin-left:8px;background:var(--maranata-blue);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 18px;font:700 13px/1.15 Inter,Arial,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 8px 20px rgba(0,37,81,.16)}
+.maranata-mobile-button{display:none;margin-left:auto;border:0;background:transparent;color:var(--maranata-blue);font-size:28px;cursor:pointer}
+.maranata-mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:9998;background:#fff;padding:14px 24px 24px;border-bottom:1px solid #e5e7eb;box-shadow:0 14px 30px rgba(0,37,81,.12)}
+.maranata-mobile-menu.open{display:grid;gap:4px}
+.maranata-mobile-menu a{padding:12px 4px;color:#26303d;text-decoration:none;font:600 15px Inter,Arial,sans-serif;border-bottom:1px solid #eef0f3}
+.hero-logo-clear{width:190px!important;height:190px!important;object-fit:contain!important;filter:drop-shadow(0 10px 24px rgba(0,0,0,.22))}
+@media(max-width:1050px){.maranata-links,.maranata-prayer{display:none}.maranata-mobile-button{display:block}.maranata-brand{min-width:0}.maranata-brand span{display:block}}
+@media(max-width:520px){body{padding-top:68px!important}.maranata-header{height:68px}.maranata-mobile-menu{top:68px}.maranata-nav{padding:0 16px}.maranata-brand img{width:38px;height:38px}.maranata-brand span{font-size:12px}.hero-logo-clear{width:150px!important;height:150px!important}}
+</style></head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[716px] w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A warm, soft-focused cinematic photograph of a diverse community gathering in a bright, modern sanctuary. The lighting is golden and ethereal, capturing people with closed eyes and peaceful expressions in a moment of collective prayer. The scene is clean and minimalist, reflecting a high-end aesthetic of serenity and spiritual welcoming." style="background-image: url('assets/images/foto7.jpeg')"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-gutter max-w-4xl mx-auto">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed/20 text-secondary font-label-sm text-label-sm mb-stack-md uppercase tracking-widest">Cuidado Pastoral</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-md">Como podemos orar por você?</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    "Porque, onde estiverem dois ou três reunidos em meu nome, ali estou eu no meio deles." — Mateus 18:20
+                </p>
+</div>
+</section>
+<!-- Form Section -->
+<section class="pb-section-gap-desktop -mt-32 relative z-20">
+<div class="max-w-container-max-width mx-auto px-gutter grid lg:grid-cols-12 gap-stack-lg">
+<!-- Supportive Sidebar Info -->
+<div class="lg:col-span-4 flex flex-col gap-stack-lg">
+<div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-md">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="favorite">favorite</span>
+<h3 class="font-headline-md text-headline-md text-primary">Nossa Equipe de Oração</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">
+                            Seu pedido será enviado diretamente aos nossos pastores e intercessores que se dedicam a clamar por cada necessidade apresentada.
+                        </p>
+</div>
+<div class="glass-card p-stack-lg rounded-xl flex flex-col gap-stack-md border-l-4 border-l-secondary-fixed-dim">
+<p class="italic text-on-surface-variant font-body-md text-body-md">
+                            "Não andeis ansiosos por coisa alguma; antes em tudo sejam os vossos pedidos conhecidos diante de Deus pela oração e súplica com ações de graças."
+                        </p>
+<span class="font-label-sm text-label-sm text-primary">— Filipenses 4:6-7</span>
+</div>
+</div>
+<!-- Main Form -->
+<div class="lg:col-span-8">
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/30 p-8 md:p-12">
+<form class="space-y-8" id="prayerRequestForm">
+<div class="grid md:grid-cols-2 gap-stack-lg">
+<div class="space-y-2">
+<label class="block font-label-sm text-label-sm text-on-surface-variant" for="name">Seu Nome</label>
+<input class="w-full h-12 bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="name" name="name" placeholder="Ex: Maria Silva" required="" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="block font-label-sm text-label-sm text-on-surface-variant" for="phone">WhatsApp (Opcional)</label>
+<input class="w-full h-12 bg-surface-container-low border border-outline-variant/50 rounded-lg px-4 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md" id="phone" name="phone" placeholder="(11) 99999-9999" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="block font-label-sm text-label-sm text-on-surface-variant" for="request">Seu Pedido de Oração</label>
+<textarea class="w-full bg-surface-container-low border border-outline-variant/50 rounded-lg p-4 focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-body-md resize-none" id="request" name="request" placeholder="Abra seu coração conosco..." required="" rows="6"></textarea>
+</div>
+<div class="flex items-center gap-3 py-2">
+<div class="relative flex items-center">
+<input class="w-5 h-5 rounded border-outline-variant text-primary focus:ring-primary/30 transition-all cursor-pointer" id="confidential" name="confidential" type="checkbox"/>
+</div>
+<label class="text-on-surface-variant font-label-sm text-label-sm cursor-pointer select-none" for="confidential">
+                                    Desejo que este pedido seja tratado como estritamente confidencial
+                                </label>
+</div>
+<div class="pt-4">
+<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary rounded-full font-button text-button hover:bg-primary-container transition-all hover-lift flex items-center justify-center gap-2" type="submit">
+<span>Enviar pedido</span>
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+</button>
+</div>
+</form>
+</div>
+<div class="mt-8 text-center text-on-surface-variant/60 font-label-sm text-label-sm">
+                        Suas informações estão seguras e serão lidas apenas por pessoas autorizadas.
+                    </div>
+</div>
+</div>
+</section>
+<!-- Extra Comfort Section -->
+<section class="py-section-gap-desktop bg-surface-container-low/30 overflow-hidden">
+<div class="max-w-container-max-width mx-auto px-gutter text-center">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-lg">Estamos aqui para caminhar com você</h2>
+<div class="grid md:grid-cols-3 gap-stack-lg text-left">
+<div class="glass-card p-8 rounded-2xl hover-lift">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="support_agent">support_agent</span>
+</div>
+<h4 class="font-button text-button text-primary mb-2">Atendimento Pastoral</h4>
+<p class="text-on-surface-variant font-body-md text-body-md">Agende uma conversa pessoal com um de nossos pastores para orientação e aconselhamento.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl hover-lift">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="groups">groups</span>
+</div>
+<h4 class="font-button text-button text-primary mb-2">Grupos de Vida</h4>
+<p class="text-on-surface-variant font-body-md text-body-md">Encontre uma comunidade próxima para compartilhar a vida e crescer na fé em pequenos grupos.</p>
+</div>
+<div class="glass-card p-8 rounded-2xl hover-lift">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="menu_book">menu_book</span>
+</div>
+<h4 class="font-button text-button text-primary mb-2">Recursos Espirituais</h4>
+<p class="text-on-surface-variant font-body-md text-body-md">Acesse devocionais, planos de leitura bíblica e mensagens que fortalecem sua jornada.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap-desktop bg-surface-bright dark:bg-surface-dim border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-lg max-w-container-max-width mx-auto px-gutter">
+<div class="space-y-stack-md">
+<div class="font-display-lg text-headline-md text-primary">Maranata</div>
+<p class="text-on-surface-variant font-body-md">Transformando vidas através do evangelho em nossa comunidade.</p>
+</div>
+<div class="space-y-stack-md">
+<h4 class="font-button text-button text-primary">Menu</h4>
+<ul class="space-y-stack-sm">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Sobre Nós</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="ministerios.html">Ministérios</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="eventos.html">Eventos</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="doacoes.html">Doações</a></li>
+</ul>
+</div>
+<div class="space-y-stack-md">
+<h4 class="font-button text-button text-primary">Links Úteis</h4>
+<ul class="space-y-stack-sm">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Privacidade</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Termos de Uso</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="contato.html">Contato</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Localização</a></li>
+</ul>
+</div>
+<div class="space-y-stack-md">
+<h4 class="font-button text-button text-primary">Siga-nos</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+</a>
+</div>
+<p class="text-on-surface-variant font-body-md pt-4">© 2026 Igreja Batista Maranata. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions and form feedback
+        const form = document.getElementById('prayerRequestForm');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = form.querySelector('button');
+            const originalContent = btn.innerHTML;
+            
+            // Visual feedback
+            btn.disabled = true;
+            btn.innerHTML = '<span>Enviando...</span>';
+            btn.classList.add('opacity-70');
+            
+            setTimeout(() => {
+                btn.innerHTML = '<span>Enviado com sucesso!</span> <span class="material-symbols-outlined" data-icon="check_circle" style="font-variation-settings: \'FILL\' 1;">check_circle</span>';
+                btn.classList.remove('bg-primary');
+                btn.classList.add('bg-green-600');
+                form.reset();
+                
+                setTimeout(() => {
+                    btn.disabled = false;
+                    btn.innerHTML = originalContent;
+                    btn.classList.remove('bg-green-600', 'opacity-70');
+                    btn.classList.add('bg-primary');
+                }, 3000);
+            }, 1500);
+        });
+
+        // Simple scroll handling for header effect enhancement
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+<script src="assets/site.js"></script></body></html>

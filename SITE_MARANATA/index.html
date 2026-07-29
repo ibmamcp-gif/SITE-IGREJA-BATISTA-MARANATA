@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Igreja Batista Maranata de Macapá</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#dad9df",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#e9c176",
+                        "primary": "#002551",
+                        "primary-container": "#0d3b73",
+                        "on-surface-variant": "#434750",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdea5",
+                        "on-secondary-container": "#785a1a",
+                        "surface-variant": "#e2e2e7",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f4f3f8",
+                        "on-primary": "#ffffff",
+                        "surface": "#f9f9fe",
+                        "inverse-on-surface": "#f1f0f6",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e7ed",
+                        "outline-variant": "#c3c6d1",
+                        "surface-container": "#eeedf3",
+                        "surface-bright": "#f9f9fe",
+                        "tertiary-fixed": "#ffdbc8",
+                        "inverse-surface": "#2f3035",
+                        "background": "#f9f9fe",
+                        "tertiary": "#421b00",
+                        "on-primary-fixed": "#001b3e",
+                        "on-surface": "#1a1c1f",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary-fixed": "#321300",
+                        "on-primary-fixed-variant": "#1e467f",
+                        "on-tertiary-fixed-variant": "#713709",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "error": "#ba1a1a",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "outline": "#737781",
+                        "secondary": "#775a19",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-container": "#e4935f",
+                        "on-background": "#1a1c1f",
+                        "tertiary-container": "#632c00",
+                        "surface-tint": "#395e98",
+                        "tertiary-fixed-dim": "#ffb68a",
+                        "on-primary-container": "#83a7e6",
+                        "surface-container-highest": "#e2e2e7",
+                        "inverse-primary": "#aac7ff",
+                        "secondary-container": "#fed488"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px",
+                        "stack-lg": "24px",
+                        "container-max-width": "1200px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "button": ["Inter"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "button": ["15px", {"lineHeight": "20px", "fontWeight": "600"}],
+                        "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "display-lg": ["48px", {"lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(234, 236, 240, 0.5);
+        }
+        .nav-scrolled {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            border-bottom: 1px solid #e2e2e7;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        .nav-scrolled .nav-link { color: #434750; }
+        .nav-scrolled .brand-text { color: #002551; }
+        
+        .hero-parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+<meta content="Site oficial da Igreja Batista Maranata de Macapá — Tudo para a Glória de Deus." name="description"/><link href="assets/images/Maranata.png" rel="icon"/>
+<style id="maranata-global-standard">
+:root{--maranata-blue:#002551;--maranata-blue-2:#0d3b73;--maranata-gold:#c99122}
+body{padding-top:76px!important}
+.maranata-header{position:fixed;inset:0 0 auto 0;z-index:9999;height:76px;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,37,81,.10);box-shadow:0 5px 22px rgba(0,37,81,.07)}
+.maranata-nav{height:100%;max-width:1200px;margin:auto;padding:0 24px;display:flex;align-items:center;gap:24px}
+.maranata-brand{display:flex;align-items:center;gap:10px;min-width:215px;text-decoration:none;color:var(--maranata-blue)}
+.maranata-brand img{width:42px;height:42px;object-fit:contain;display:block}
+.maranata-brand span{font:700 14px/1.15 Inter,Arial,sans-serif;letter-spacing:-.01em}
+.maranata-links{margin-left:auto;display:flex;align-items:center;gap:23px}
+.maranata-link{position:relative;color:#333943;text-decoration:none;font:600 13px/1 Inter,Arial,sans-serif;white-space:nowrap;padding:30px 0 28px}
+.maranata-link:hover,.maranata-link.active{color:var(--maranata-blue)}
+.maranata-link.active:after{content:"";position:absolute;left:0;right:0;bottom:19px;height:2px;border-radius:2px;background:var(--maranata-blue)}
+.maranata-prayer{margin-left:8px;background:var(--maranata-blue);color:#fff!important;text-decoration:none;border-radius:999px;padding:12px 18px;font:700 13px/1.15 Inter,Arial,sans-serif;text-align:center;white-space:nowrap;box-shadow:0 8px 20px rgba(0,37,81,.16)}
+.maranata-mobile-button{display:none;margin-left:auto;border:0;background:transparent;color:var(--maranata-blue);font-size:28px;cursor:pointer}
+.maranata-mobile-menu{display:none;position:fixed;top:76px;left:0;right:0;z-index:9998;background:#fff;padding:14px 24px 24px;border-bottom:1px solid #e5e7eb;box-shadow:0 14px 30px rgba(0,37,81,.12)}
+.maranata-mobile-menu.open{display:grid;gap:4px}
+.maranata-mobile-menu a{padding:12px 4px;color:#26303d;text-decoration:none;font:600 15px Inter,Arial,sans-serif;border-bottom:1px solid #eef0f3}
+.hero-logo-clear{width:260px!important;height:auto!important;max-height:240px!important;object-fit:contain!important;filter:drop-shadow(0 12px 28px rgba(0,0,0,.28))}
+@media(max-width:1050px){.maranata-links,.maranata-prayer{display:none}.maranata-mobile-button{display:block}.maranata-brand{min-width:0}.maranata-brand span{display:block}}
+@media(max-width:520px){body{padding-top:68px!important}.maranata-header{height:68px}.maranata-mobile-menu{top:68px}.maranata-nav{padding:0 16px}.maranata-brand img{width:38px;height:38px}.maranata-brand span{font-size:12px}.hero-logo-clear{width:210px!important;height:auto!important;max-height:200px!important}}
+</style></head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<header class="maranata-header" id="site-header"><div class="maranata-nav"><a class="maranata-brand" href="index.html"><img alt="Logo Igreja Batista Maranata" src="assets/images/Maranata.png"/><span>Igreja Batista<br/>Maranata</span></a><nav aria-label="Menu principal" class="maranata-links"><a class="maranata-link active" href="index.html">Início</a><a class="maranata-link" href="sobre.html">Sobre</a><a class="maranata-link" href="ministerios.html">Ministérios</a><a class="maranata-link" href="acao-social.html">Ação Social</a><a class="maranata-link" href="eventos.html">Eventos</a><a class="maranata-link" href="galeria.html">Galeria</a><a class="maranata-link" href="doacoes.html">Doações</a><a class="maranata-link" href="contato.html">Contato</a></nav><a class="maranata-prayer" href="oracao.html">Pedido de<br/>Oração</a><button aria-label="Abrir menu" class="maranata-mobile-button" onclick="document.getElementById('maranata-mobile-menu').classList.toggle('open')" type="button">☰</button></div></header><div class="maranata-mobile-menu" id="maranata-mobile-menu"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="ministerios.html">Ministérios</a><a href="acao-social.html">Ação Social</a><a href="eventos.html">Eventos</a><a href="galeria.html">Galeria</a><a href="doacoes.html">Doações</a><a href="contato.html">Contato</a><a href="oracao.html">Pedido de Oração</a></div>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 hero-parallax z-0" data-alt="An expansive and architecturally modern Christian church temple in Macapá, Brazil, captured during the golden hour. The building features clean white lines and large glass panels reflecting a warm sunset sky. The atmosphere is peaceful and majestic, with lush tropical greenery in the foreground and a soft-focus treatment to emphasize the sacred serenity of the space." style="background-image: url('assets/images/e9579c67-81b9-4a99-a4b2-cda1382a1014.jpeg')"></div>
+<div class="absolute inset-0 bg-primary-container/40 backdrop-blur-[2px] z-10"></div>
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<div class="relative z-20 text-center px-gutter max-w-4xl mx-auto space-y-stack-lg">
+<div class="flex justify-center mb-5">
+<img alt="Logo Igreja Batista Maranata" class="hero-logo-clear" src="assets/images/logo-clara.png"/>
+</div>
+<div class="space-y-stack-sm">
+<p class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-[0.2em]">Macapá • AP</p>
+
+<p class="font-headline-md text-headline-md text-white/90 italic font-light">"Tudo para a Glória de Deus."</p>
+</div>
+<p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto">
+                Uma comunidade centrada em Cristo, comprometida com a Palavra e o amor ao próximo. Seja bem-vindo à nossa família de fé no coração do Amapá.
+            </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-stack-md pt-8">
+<a class="w-full md:w-auto bg-white text-primary px-10 py-4 rounded-full font-button text-button hover:bg-surface-container-low transition-all" href="sobre.html">
+                    Conheça nossa Igreja
+                </a>
+<a class="w-full md:w-auto border border-white/30 text-white backdrop-blur-md px-10 py-4 rounded-full font-button text-button hover:bg-white/10 transition-all" href="oracao.html">
+                    Pedido de Oração
+                </a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 animate-bounce">
+<span class="material-symbols-outlined text-white/50 text-3xl">keyboard_double_arrow_down</span>
+</div>
+</header>
+<!-- Quick Access -->
+<section class="relative z-30 -mt-24 px-gutter max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">schedule</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Cultos</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Confira nossos dias e horários de celebração.</p>
+</div>
+<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">groups</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Ministérios</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Encontre o seu lugar para servir a Deus.</p>
+</div>
+<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">calendar_month</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Eventos</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Fique por dentro de tudo o que acontece aqui.</p>
+</div>
+<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">location_on</span>
+</div>
+<h3 class="font-headline-md text-[20px] mb-2">Como Chegar</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Saiba onde estamos localizados em Macapá.</p>
+</div>
+</div>
+</section>
+<!-- About Us -->
+<section class="py-section-gap-desktop px-gutter max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
+<img class="w-full h-full object-cover" data-alt="A diverse and joyful group of church members of all ages praying together in a sun-drenched, modern sanctuary. The lighting is ethereal and warm, highlighting the expressions of peace and community. The photographic style is high-end, editorial, and minimalist, utilizing a bright color palette with soft navy and gold accents consistent with the church's visual identity." decoding="async" loading="lazy" src="assets/images/e9579c67-81b9-4a99-a4b2-cda1382a1014.jpeg">
+</img></div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary-container p-8 rounded-xl hidden md:flex flex-col justify-end text-white">
+<p class="text-4xl font-bold">25+</p>
+<p class="text-sm opacity-80">Anos de Fé e Comunidade</p>
+</div>
+</div>
+<div class="space-y-stack-lg">
+<div class="inline-block px-4 py-1 rounded-full bg-secondary-fixed/20 text-secondary-fixed-variant font-label-sm text-label-sm">Nossa Identidade</div>
+<h2 class="font-display-lg text-display-lg text-primary">Uma igreja para toda a família.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    A Igreja Batista Maranata é mais do que um templo; é um lar espiritual. Há décadas, servimos a cidade de Macapá com a missão de proclamar o Evangelho de Jesus Cristo, acolhendo cada pessoa com amor e guiando-as no caminho da verdade bíblica.
+                </p>
+<div class="space-y-stack-md pt-4">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-primary">Doutrina Bíblica</h4>
+<p class="text-on-surface-variant">Ensino fiel às Escrituras em todas as nossas atividades.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-2xl mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-primary">Comunhão Fraterna</h4>
+<p class="text-on-surface-variant">Um lugar onde você é conhecido e amado verdadeiramente.</p>
+</div>
+</div>
+</div>
+<button class="border-b-2 border-primary text-primary font-button pb-1 hover:text-primary-container hover:border-primary-container transition-all">Saiba mais sobre nós</button>
+</div>
+</div>
+</section>
+<!-- Ministries -->
+<section class="bg-surface-container-low py-section-gap-desktop">
+<div class="px-gutter max-w-container-max-width mx-auto">
+<div class="text-center mb-16 space-y-stack-sm">
+<h2 class="font-display-lg text-display-lg text-primary">Nossos Ministérios</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Existem diversas formas de servir e crescer. Encontre o grupo que mais combina com seu momento de vida.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+<!-- Kids -->
+<div class="group relative overflow-hidden rounded-xl h-80 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Cheerful and colorful scene of children learning about the Bible in a modern, creative classroom environment. The space is filled with soft natural light, minimalist educational decor, and happy children engaging in a group activity. High-quality photographic style focusing on connection and joy." decoding="async" loading="lazy" src="assets/images/foto7.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-[22px]">Maranata Kids</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">Cuidando do coração dos nossos pequenos.</p>
+</div>
+</div>
+<!-- Mulheres -->
+<div class="group relative overflow-hidden rounded-xl h-80 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A group of women sharing a moment of prayer and fellowship in a elegant, minimalist lounge setting. The atmosphere is warm, intimate, and sophisticated. The focus is on their supportive interactions and the serene mood of the gathering." decoding="async" loading="lazy" src="assets/images/foto8.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-[22px]">Mulher em Missão</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">Fortalecendo mulheres na fé e no propósito.</p>
+</div>
+</div>
+<!-- Homens -->
+<div class="group relative overflow-hidden rounded-xl h-80 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A group of men in a focused Bible study session, seated in a contemporary industrial-style meeting space. The scene communicates strength, brotherhood, and deep reflection. Premium cinematic lighting with a professional aesthetic." decoding="async" loading="lazy" src="assets/images/foto10.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-[22px]">Homens</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">Liderança bíblica e integridade masculina.</p>
+</div>
+</div>
+<!-- Jovens -->
+<div class="group relative overflow-hidden rounded-xl h-80 cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Vibrant group of young adults engaged in a modern worship gathering. The setting features contemporary minimalist design with atmospheric blue and warm gold lighting. The image captures the energy and passion of youth ministry." decoding="async" loading="lazy" src="assets/images/foto11.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-[22px]">Jovens</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">Uma geração apaixonada por Jesus.</p>
+</div>
+</div>
+<!-- Louvor -->
+<div class="group relative overflow-hidden rounded-xl h-80 cursor-pointer md:col-span-1">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A skilled worship band performing in a modern church auditorium. Soft focus on the instruments and singers under professional stage lighting that creates a worshipful, serene atmosphere. High-end equipment and clean visual lines." decoding="async" loading="lazy" src="assets/images/AVISO CESTA DO AMOR.png"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-[22px]">Louvor</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">Adoração em espírito e em verdade.</p>
+</div>
+</div>
+<!-- Multimídia -->
+<div class="group relative overflow-hidden rounded-xl h-80 cursor-pointer md:col-span-1">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a modern professional video camera and production equipment in a sleek church media booth. The background shows the softly lit sanctuary. The image communicates technological excellence and creative service." decoding="async" loading="lazy" src="assets/images/foto1.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-[22px]">Multimídia</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">Comunicação criativa para o Reino.</p>
+</div>
+</div>
+<!-- Ação Social -->
+<div class="group relative overflow-hidden rounded-xl h-80 cursor-pointer md:col-span-2">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Hands of volunteers packing nutritional aid baskets with dignity and care. The setting is clean and organized. The focus is on the act of service and compassion. Bright, high-key lighting that evokes hope and social impact." decoding="async" loading="lazy" src="assets/images/e9579c67-81b9-4a99-a4b2-cda1382a1014.jpeg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h3 class="text-white font-headline-md text-[22px]">Ação Social</h3>
+<p class="text-white/70 text-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">O amor de Cristo em ações práticas na comunidade.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Action (Cesta do Amor) -->
+<section class="py-section-gap-desktop px-gutter max-w-container-max-width mx-auto">
+<div class="bg-primary rounded-[2rem] p-12 md:p-20 overflow-hidden relative group">
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none transition-transform duration-1000 group-hover:scale-105">
+<span class="material-symbols-outlined text-[300px] text-white">volunteer_activism</span>
+</div>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="space-y-stack-lg">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-white font-label-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+                        Cesta do Amor
+                    </div>
+<h2 class="font-display-lg text-display-lg text-white">Transforme vidas através da sua generosidade.</h2>
+<p class="font-body-lg text-body-lg text-white/80">
+                        O projeto Cesta do Amor atende dezenas de famílias em Macapá com itens básicos de alimentação e higiene, levando o pão físico e o pão da vida.
+                    </p>
+<button class="bg-secondary text-white px-10 py-4 rounded-full font-button text-button hover:bg-secondary/90 transition-all flex items-center gap-2">
+                        Saiba como ajudar
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-stack-md">
+<div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 text-center">
+<div class="text-4xl font-bold text-white mb-2">50+</div>
+<div class="text-sm text-white/60">Famílias Mensais</div>
+</div>
+<div class="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 text-center">
+<div class="text-4xl font-bold text-white mb-2">12t</div>
+<div class="text-sm text-white/60">Alimentos p/ ano</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="py-section-gap-desktop overflow-hidden">
+<div class="px-gutter max-w-container-max-width mx-auto mb-16">
+<h2 class="font-display-lg text-display-lg text-primary text-center">Vida na Maranata</h2>
+</div>
+<div class="flex gap-4 animate-scroll whitespace-nowrap overflow-x-auto pb-8 no-scrollbar">
+<div class="min-w-[400px] h-[300px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Candid photograph of a diverse church congregation singing together during a Sunday morning service. The lighting is bright and natural, capturing a sense of unity and spiritual joy. Professional photography style." decoding="async" loading="lazy" src="assets/images/foto7.jpeg"/>
+</div>
+<div class="min-w-[400px] h-[300px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Close-up of hands held together in prayer during a youth group gathering. Soft, cinematic lighting creates a focused and spiritual mood. High-end visual aesthetic." decoding="async" loading="lazy" src="assets/images/foto8.jpeg"/>
+</div>
+<div class="min-w-[400px] h-[300px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A brightly lit fellowship hall where church members are sharing a meal and conversation. The atmosphere is warm and welcoming, highlighting the community aspect of the church. Professional editorial style." decoding="async" loading="lazy" src="assets/images/foto10.png"/>
+</div>
+<div class="min-w-[400px] h-[300px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A Christian baptism ceremony occurring in a clean, modern pool. The image captures the emotional and sacred moment with soft, high-key lighting. Calm and dignified atmosphere." decoding="async" loading="lazy" src="assets/images/foto11.png"/>
+</div>
+<div class="min-w-[400px] h-[300px] rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Smiling volunteers at a community outreach event in Macapá, distributing aid with compassion. The lighting is sunny and optimistic, showing the church's positive impact." decoding="async" loading="lazy" src="assets/images/AVISO CESTA DO AMOR.png"/>
+</div>
+</div>
+</section>
+<!-- Schedule -->
+<section class="py-section-gap-desktop bg-surface">
+<div class="px-gutter max-w-container-max-width mx-auto">
+<div class="text-center mb-16 space-y-stack-sm">
+<h2 class="font-display-lg text-display-lg text-primary">Nossos Cultos</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Reserve um tempo para estar na presença do Senhor.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<div class="bg-white p-10 rounded-2xl border border-outline-variant hover:border-primary transition-all group">
+<div class="text-secondary font-bold text-lg mb-4">Domingo</div>
+<div class="space-y-6">
+<div class="flex justify-between items-center pb-4 border-b border-surface-variant">
+<div>
+<h4 class="font-bold text-primary">Escola Bíblica</h4>
+<p class="text-sm text-on-surface-variant">Ensino para todas as idades</p>
+</div>
+<span class="font-bold text-primary">17:00</span>
+</div>
+<div class="flex justify-between items-center pb-4 border-b border-surface-variant">
+<div>
+<h4 class="font-bold text-primary">Culto da Noite</h4>
+<p class="text-sm text-on-surface-variant">Celebração e Palavra</p>
+</div>
+<span class="font-bold text-primary">18:30</span>
+</div>
+</div>
+</div>
+<div class="bg-primary p-10 rounded-2xl shadow-xl transform scale-105 z-10 relative overflow-hidden">
+<div class="absolute -top-10 -right-10 opacity-10">
+<span class="material-symbols-outlined text-[150px] text-white">star</span>
+</div>
+<div class="text-secondary-fixed font-bold text-lg mb-4">Quarta-feira</div>
+<div class="space-y-6">
+<div class="flex justify-between items-center pb-4 border-b border-white/10">
+<div>
+<h4 class="font-bold text-white">Culto de Oração</h4>
+<p class="text-sm text-white/60">Intercessão e Estudo</p>
+</div>
+<span class="font-bold text-white">19:30</span>
+</div>
+</div>
+<div class="mt-12 text-white/80 text-sm">
+                        "Onde estiverem dois ou três reunidos em meu nome, ali eu estou no meio deles."
+                    </div>
+</div>
+<div class="bg-white p-10 rounded-2xl border border-outline-variant hover:border-primary transition-all group">
+<div class="text-secondary font-bold text-lg mb-4">Eventos Especiais</div>
+<div class="space-y-6">
+<div class="flex justify-between items-center pb-4 border-b border-surface-variant">
+<div>
+<h4 class="font-bold text-primary">Vigílias</h4>
+<p class="text-sm text-on-surface-variant">Consultar Calendário</p>
+</div>
+<span class="material-symbols-outlined text-primary">calendar_today</span>
+</div>
+<div class="flex justify-between items-center pb-4 border-b border-surface-variant">
+<div>
+<h4 class="font-bold text-primary">Seminários</h4>
+<p class="text-sm text-on-surface-variant">Programação Sazonal</p>
+</div>
+<span class="material-symbols-outlined text-primary">info</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Prayer Request -->
+<section class="py-section-gap-desktop px-gutter max-w-container-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-stack-lg order-2 md:order-1">
+<h2 class="font-display-lg text-display-lg text-primary">Estamos aqui para orar por você.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Não importa qual seja a sua carga, queremos levar suas petições ao trono da graça junto com você. Sua mensagem será entregue ao nosso ministério de intercessão.
+                </p>
+<form class="space-y-stack-md pt-6">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Seu Nome Completo</label>
+<input class="w-full h-12 bg-surface-container-low border-outline-variant rounded-lg focus:ring-primary focus:border-primary transition-all px-4" placeholder="Como podemos te chamar?" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Seu Pedido de Oração</label>
+<textarea class="w-full bg-surface-container-low border-outline-variant rounded-lg focus:ring-primary focus:border-primary transition-all px-4 py-3" placeholder="Escreva aqui o que está em seu coração..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-full font-button text-button hover:bg-primary-container transition-all shadow-md" type="submit">
+                        Quero que orem por mim
+                    </button>
+</form>
+</div>
+<div class="order-1 md:order-2">
+<div class="rounded-3xl overflow-hidden shadow-2xl aspect-video md:aspect-square">
+<img class="w-full h-full object-cover" data-alt="A serene, high-quality image of people standing in a circle with bowed heads, softly holding hands in a modern, sunlit church space. The focus is on the peaceful atmosphere and the symbolic connection of communal prayer. Soft shadows and elegant highlights define the scene." decoding="async" loading="lazy" src="assets/images/foto1.jpeg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Donations & Partnerships -->
+<section class="py-section-gap-desktop bg-surface-container-highest/30">
+<div class="px-gutter max-w-container-max-width mx-auto">
+<div class="text-center mb-16 space-y-stack-sm">
+<h2 class="font-display-lg text-display-lg text-primary">Generosidade que Transforma</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Contribua com a obra de Deus através do dízimo, ofertas e projetos missionários.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-stack-md">
+<button class="bg-white p-6 rounded-2xl border border-outline-variant hover:border-primary hover:shadow-lg transition-all text-center group" onclick="showDonation('PIX Geral')">
+<span class="material-symbols-outlined text-3xl text-primary mb-3 block group-hover:scale-110 transition-transform">qr_code_2</span>
+<span class="font-bold text-sm block">PIX Geral</span>
+</button>
+<button class="bg-white p-6 rounded-2xl border border-outline-variant hover:border-primary hover:shadow-lg transition-all text-center group" onclick="showDonation('Oferta')">
+<span class="material-symbols-outlined text-3xl text-primary mb-3 block group-hover:scale-110 transition-transform">redeem</span>
+<span class="font-bold text-sm block">Oferta</span>
+</button>
+<button class="bg-white p-6 rounded-2xl border border-outline-variant hover:border-primary hover:shadow-lg transition-all text-center group" onclick="showDonation('Missões')">
+<span class="material-symbols-outlined text-3xl text-primary mb-3 block group-hover:scale-110 transition-transform">public</span>
+<span class="font-bold text-sm block">Missões</span>
+</button>
+<button class="bg-white p-6 rounded-2xl border border-outline-variant hover:border-primary hover:shadow-lg transition-all text-center group" onclick="showDonation('Ação Social')">
+<span class="material-symbols-outlined text-3xl text-primary mb-3 block group-hover:scale-110 transition-transform">volunteer_activism</span>
+<span class="font-bold text-sm block">Ação Social</span>
+</button>
+<button class="bg-white p-6 rounded-2xl border border-outline-variant hover:border-primary hover:shadow-lg transition-all text-center group" onclick="showDonation('Maranata Kids')">
+<span class="material-symbols-outlined text-3xl text-primary mb-3 block group-hover:scale-110 transition-transform">child_care</span>
+<span class="font-bold text-sm block">Maranata Kids</span>
+</button>
+<button class="bg-white p-6 rounded-2xl border border-outline-variant hover:border-primary hover:shadow-lg transition-all text-center group" onclick="showDonation('Parceiros Mensais')">
+<span class="material-symbols-outlined text-3xl text-primary mb-3 block group-hover:scale-110 transition-transform">handshake</span>
+<span class="font-bold text-sm block">Parceiros</span>
+</button>
+</div>
+<!-- Donation Panel (Hidden by default) -->
+<div class="hidden mt-12 bg-white rounded-3xl p-10 shadow-xl border border-primary/10 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500" id="donationPanel">
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-48 h-48 bg-surface-container flex items-center justify-center rounded-2xl border-2 border-dashed border-outline-variant">
+<!-- QR Code Placeholder -->
+<span class="material-symbols-outlined text-8xl text-outline-variant">qr_code_2</span>
+</div>
+<div class="flex-1 space-y-stack-md text-center md:text-left">
+<h3 class="font-headline-md text-primary" id="donationTitle">PIX Geral</h3>
+<p class="text-on-surface-variant">Utilize a chave PIX abaixo para realizar sua contribuição. Deus abençoe sua generosidade.</p>
+<div class="bg-surface-container-low p-4 rounded-xl flex items-center justify-between gap-4 border border-outline-variant">
+<code class="text-primary font-mono text-sm break-all">financeiro@ibmaranata.com.br</code>
+<button class="bg-primary text-white p-2 rounded-lg hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter py-section-gap-mobile md:py-section-gap-desktop max-w-container-max-width mx-auto">
+<div class="space-y-stack-md">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                    Igreja Batista Maranata
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Uma igreja bíblica, relevante e acolhedora no centro de Macapá. Venha nos visitar.
+                </p>
+<div class="flex gap-4">
+<a class="text-primary dark:text-primary-fixed hover:opacity-100 opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined">qr_code_2</span>
+</a>
+<a class="text-primary dark:text-primary-fixed hover:opacity-100 opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="text-primary dark:text-primary-fixed hover:opacity-100 opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined">play_circle</span>
+</a>
+<a class="text-primary dark:text-primary-fixed hover:opacity-100 opacity-80 transition-opacity" href="#">
+<span class="material-symbols-outlined">chat</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-primary-fixed mb-6">Links Rápidos</h4>
+<ul class="space-y-stack-sm font-label-sm text-label-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="index.html">Início</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sobre Nós</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Nossos Ministérios</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Programação</a></li>
+<li><a class="hover:text-primary transition-colors" href="eventos.html">Eventos</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-primary-fixed mb-6">Contato</h4>
+<ul class="space-y-stack-sm font-label-sm text-label-sm text-on-surface-variant">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                        Macapá, AP - Brasil
+                    </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">phone</span>
+                        (96) 9999-9999
+                    </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        contato@ibmaranata.com.br
+                    </li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary dark:text-primary-fixed mb-6">Localização</h4>
+<div class="rounded-xl overflow-hidden h-40 border border-outline-variant grayscale hover:grayscale-0 transition-all">
+<img class="w-full h-full object-cover" data-location="Macapá, Amapá" decoding="async" loading="lazy" src="assets/images/e9579c67-81b9-4a99-a4b2-cda1382a1014.jpeg"/>
+</div>
+</div>
+</div>
+<div class="border-t border-outline-variant py-8 text-center px-gutter">
+<p class="font-label-sm text-label-sm text-on-surface-variant">© 2026 Igreja Batista Maranata de Macapá. Tudo para a Glória de Deus.</p>
+</div>
+</footer>
+<script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                nav.classList.add('nav-scrolled');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('nav-scrolled');
+                nav.classList.add('bg-transparent');
+            }
+        });
+
+        // Donation Panel Logic
+        function showDonation(type) {
+            const panel = document.getElementById('donationPanel');
+            const title = document.getElementById('donationTitle');
+            
+            title.innerText = type;
+            panel.classList.remove('hidden');
+            
+            panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Parallax simple implementation
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero-parallax');
+            if (parallax) {
+                parallax.style.transform = 'translateY(' + (scrolled * 0.5) + 'px)';
+            }
+        });
+    </script>
+<script src="assets/site.js"></script></body></html>

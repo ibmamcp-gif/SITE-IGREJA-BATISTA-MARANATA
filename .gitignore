@@ -1,0 +1,23 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Dependências (caso existam no futuro)
+node_modules/
+
+# Arquivos temporários / backups
+*.tmp
+*.bak
+~$*
+
+# Arquivos compactados de backup do projeto
+*.zip
