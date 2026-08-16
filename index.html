@@ -189,34 +189,34 @@ body{padding-top:76px!important}
 <!-- Quick Access -->
 <section class="relative z-30 -mt-24 px-gutter max-w-container-max-width mx-auto">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
-<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+<a href="#cultos" class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
 <div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
 <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">schedule</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2">Cultos</h3>
 <p class="font-body-md text-on-surface-variant text-sm">Confira nossos dias e horários de celebração.</p>
-</div>
-<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+</a>
+<a href="ministerios.html" class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
 <div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
 <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">groups</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2">Ministérios</h3>
 <p class="font-body-md text-on-surface-variant text-sm">Encontre o seu lugar para servir a Deus.</p>
-</div>
-<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+</a>
+<a href="eventos.html" class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
 <div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
 <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">calendar_month</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2">Eventos</h3>
 <p class="font-body-md text-on-surface-variant text-sm">Fique por dentro de tudo o que acontece aqui.</p>
-</div>
-<div class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
+</a>
+<a href="contato.html" class="glass-card p-8 rounded-xl hover-lift flex flex-col items-center text-center group cursor-pointer">
 <div class="w-14 h-14 rounded-full bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
 <span class="material-symbols-outlined text-primary group-hover:text-white text-3xl">location_on</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2">Como Chegar</h3>
 <p class="font-body-md text-on-surface-variant text-sm">Saiba onde estamos localizados em Macapá.</p>
-</div>
+</a>
 </div>
 </section>
 <!-- About Us -->
@@ -355,7 +355,7 @@ body{padding-top:76px!important}
 </div>
 </section>
 <!-- Schedule -->
-<section class="py-section-gap-desktop bg-surface">
+<section id="cultos" class="py-section-gap-desktop bg-surface">
 <div class="px-gutter max-w-container-max-width mx-auto">
 <div class="text-center mb-16 space-y-stack-sm">
 <h2 class="font-display-lg text-display-lg text-primary">Nossos Cultos</h2>
@@ -486,16 +486,16 @@ body{padding-top:76px!important}
 <!-- Donation Panel (Hidden by default) -->
 <div class="hidden mt-12 bg-white rounded-3xl p-10 shadow-xl border border-primary/10 max-w-3xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500" id="donationPanel">
 <div class="flex flex-col md:flex-row items-center gap-10">
-<div class="w-48 h-48 bg-surface-container flex items-center justify-center rounded-2xl border-2 border-dashed border-outline-variant">
-<!-- QR Code Placeholder -->
-<span class="material-symbols-outlined text-8xl text-outline-variant">qr_code_2</span>
+<div class="w-48 h-48 bg-white flex items-center justify-center rounded-2xl border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-contain" alt="QR Code PIX" src="assets/images/PIX MARANATA PARA CADEIRAS.png"/>
 </div>
 <div class="flex-1 space-y-stack-md text-center md:text-left">
 <h3 class="font-headline-md text-primary" id="donationTitle">PIX Geral</h3>
 <p class="text-on-surface-variant">Utilize a chave PIX abaixo para realizar sua contribuição. Deus abençoe sua generosidade.</p>
+<p class="text-sm text-secondary font-semibold" id="donationInstruction">Importante: escreva "PIX Geral" na mensagem do PIX para direcionar sua doação.</p>
 <div class="bg-surface-container-low p-4 rounded-xl flex items-center justify-between gap-4 border border-outline-variant">
-<code class="text-primary font-mono text-sm break-all">financeiro@ibmaranata.com.br</code>
-<button class="bg-primary text-white p-2 rounded-lg hover:bg-primary-container transition-colors">
+<code class="text-primary font-mono text-sm break-all" id="pixKey">52.407.886/0001-96</code>
+<button onclick="copiarPix()" class="bg-primary text-white p-2 rounded-lg hover:bg-primary-container transition-colors">
 <span class="material-symbols-outlined text-sm">content_copy</span>
 </button>
 </div>
@@ -584,11 +584,22 @@ body{padding-top:76px!important}
         function showDonation(type) {
             const panel = document.getElementById('donationPanel');
             const title = document.getElementById('donationTitle');
+            const instruction = document.getElementById('donationInstruction');
             
             title.innerText = type;
+            if (instruction) {
+                instruction.innerText = 'Importante: escreva "' + type + '" na mensagem do PIX para direcionar sua doação ao setor desejado.';
+            }
             panel.classList.remove('hidden');
             
             panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function copiarPix() {
+            const chave = document.getElementById('pixKey').innerText;
+            navigator.clipboard.writeText(chave).then(function() {
+                alert('Chave PIX copiada: ' + chave);
+            });
         }
 
         // Parallax simple implementation
